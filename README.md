@@ -1,4 +1,4 @@
-# Multimodal AI for Precision Preventive Cardiology
+# Multimodal integration reveals complementary imaging and genetic axes of coronary artery disease risk
 
 A deep-learning framework that integrates **multi-organ medical imaging, polygenic risk, ECG, and clinical biomarkers** to predict 10-year incident coronary artery disease (CAD) in the UK Biobank — and to disentangle the *complementary* and *independent* contributions of imaging-derived and genetic risk.
 
