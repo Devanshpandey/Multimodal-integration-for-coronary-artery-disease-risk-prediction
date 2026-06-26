@@ -1,0 +1,24 @@
+# UK Biobank / participant data — never commit
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.sample
+*.fam
+*.bed
+*.bim
+*.pheno
+*.phe
+*.npy
+*.npz
+*.nii
+*.nii.gz
+*.dcm
+data/
+phenotypes/
+**/raw_data/
+**/processed_imaging_data/
+**/temp_imaging_data/
+
+# Jupyter — keep code, drop state
+.ipynb_checkpoints/
