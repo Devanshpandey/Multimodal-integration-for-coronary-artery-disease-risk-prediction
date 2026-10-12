@@ -230,7 +230,7 @@ def build(out_pdf: Path, qa: dict):
     k.space(0.35 * IN)
 
     # --- partial R2 bars + chips side by side
-    blk_h = 6.35 * IN
+    blk_h = 6.6 * IN
     x, y, w, h = k.reserve(blk_h)
     bars_w = w * 0.42
     vd = comp["irs_variance_decomposition"]
