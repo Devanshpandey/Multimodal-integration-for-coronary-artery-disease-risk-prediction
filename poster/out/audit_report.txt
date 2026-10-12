@@ -12,16 +12,247 @@ poster.pdf: pages=1 size=5184 x 2592 pt fonts=13 all_embedded=True type3=False
     FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0
     GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0
     HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0
-    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     20  0
-    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     21  0
+    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes    457  0
+    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes    458  0
 poster_print.pdf: pages=1 size=5184 x 2592 pt fonts=0 all_embedded=True type3=False
 
 == 2. raster images (effective DPI at placed size)
 page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
 --------------------------------------------------------------------------------------------
-   1     0 image    1629  2198  icc     3   8  image  no        18  0   150   150  345K 3.3%
+   1     0 image     454   454  icc     3   8  image  no        18  0   440   440 6105B 1.0%
+   1     1 image     310   308  rgb     3   8  image  no        20  0   300   300  300B 0.1%
+   1     2 smask     310   308  gray    1   8  image  no        20  0   300   300 3291B 3.4%
+   1     3 image     454   454  icc     3   8  image  no        18  0   440   440 6105B 1.0%
+   1     4 image     250   373  icc     3   8  image  no        31  0   440   440 6424B 2.3%
+   1     5 image     169   251  rgb     3   8  image  no        32  0   300   300  146B 0.1%
+   1     6 smask     169   251  gray    1   8  image  no        32  0   300   300 1031B 2.4%
+   1     7 image     250   373  icc     3   8  image  no        31  0   440   440 6424B 2.3%
+   1     8 image     176   521  icc     3   8  image  no        46  0   440   440 24.0K 8.9%
+   1     9 image     119   353  rgb     3   8  image  no        47  0   300   300  145B 0.1%
+   1    10 smask     119   353  gray    1   8  image  no        47  0   300   300 2049B 4.9%
+   1    11 image     176   521  icc     3   8  image  no        46  0   440   440 24.0K 8.9%
+   1    12 image     188   128  icc     3   8  image  no        56  0   440   440 6518B 9.0%
+   1    13 image     129    88  rgb     3   8  image  no        57  0   300   300   55B 0.2%
+   1    14 smask     129    88  gray    1   8  image  no        57  0   300   300 1037B 9.1%
+   1    15 image     188   128  icc     3   8  image  no        56  0   440   440 6518B 9.0%
+   1    16 image     157   301  icc     3   8  image  no        66  0   440   440 3376B 2.4%
+   1    17 image     108   205  rgb     3   8  image  no        67  0   300   300   87B 0.1%
+   1    18 smask     108   205  gray    1   8  image  no        67  0   300   300 1825B 8.2%
+   1    19 image     157   301  icc     3   8  image  no        66  0   440   440 3376B 2.4%
+   1    20 image     157   301  icc     3   8  image  no        76  0   440   440 3424B 2.4%
+   1    21 image     106   205  rgb     3   8  image  no        77  0   300   300   86B 0.1%
+   1    22 smask     106   205  gray    1   8  image  no        77  0   300   300 2522B  12%
+   1    23 image     157   301  icc     3   8  image  no        76  0   440   440 3424B 2.4%
+   1    24 image     157   301  icc     3   8  image  no        86  0   440   440 3457B 2.4%
+   1    25 image     106   204  rgb     3   8  image  no        87  0   300   300   86B 0.1%
+   1    26 smask     106   204  gray    1   8  image  no        87  0   300   300 2483B  11%
+   1    27 image     157   301  icc     3   8  image  no        86  0   440   440 3457B 2.4%
+   1    28 image     156   301  icc     3   8  image  no        96  0   440   440 2966B 2.1%
+   1    29 image     107   204  rgb     3   8  image  no        97  0   300   300   86B 0.1%
+   1    30 smask     107   204  gray    1   8  image  no        97  0   300   300 2414B  11%
+   1    31 image     156   301  icc     3   8  image  no        96  0   440   440 2966B 2.1%
+   1    32 image     157   301  icc     3   8  image  no       106  0   440   440 2838B 2.0%
+   1    33 image     106   204  rgb     3   8  image  no       107  0   300   300   86B 0.1%
+   1    34 smask     106   204  gray    1   8  image  no       107  0   300   300 1900B 8.8%
+   1    35 image     157   301  icc     3   8  image  no       106  0   440   440 2838B 2.0%
+   1    36 image     157   302  icc     3   8  image  no       116  0   440   440 3504B 2.5%
+   1    37 image     107   206  rgb     3   8  image  no       117  0   300   300   87B 0.1%
+   1    38 smask     107   206  gray    1   8  image  no       117  0   300   300 2474B  11%
+   1    39 image     157   302  icc     3   8  image  no       116  0   440   440 3504B 2.5%
+   1    40 image     157   302  icc     3   8  image  no       126  0   440   440 3324B 2.3%
+   1    41 image     108   206  rgb     3   8  image  no       127  0   300   300   88B 0.1%
+   1    42 smask     108   206  gray    1   8  image  no       127  0   300   300 1829B 8.2%
+   1    43 image     157   302  icc     3   8  image  no       126  0   440   440 3324B 2.3%
+   1    44 image     343   329  rgb     3   8  image  no       136  0   300   300  351B 0.1%
+   1    45 smask     343   329  gray    1   8  image  no       136  0   300   300  133B 0.1%
+   1    46 image     157   301  icc     3   8  image  no        66  0   440   440 3376B 2.4%
+   1    47 image     108   205  rgb     3   8  image  no        67  0   300   300   87B 0.1%
+   1    48 smask     108   205  gray    1   8  image  no        67  0   300   300 1825B 8.2%
+   1    49 image     157   301  icc     3   8  image  no        66  0   440   440 3376B 2.4%
+   1    50 image     157   301  icc     3   8  image  no        76  0   440   440 3424B 2.4%
+   1    51 image     106   205  rgb     3   8  image  no        77  0   300   300   86B 0.1%
+   1    52 smask     106   205  gray    1   8  image  no        77  0   300   300 2522B  12%
+   1    53 image     157   301  icc     3   8  image  no        76  0   440   440 3424B 2.4%
+   1    54 image     157   301  icc     3   8  image  no        86  0   440   440 3457B 2.4%
+   1    55 image     106   204  rgb     3   8  image  no        87  0   300   300   86B 0.1%
+   1    56 smask     106   204  gray    1   8  image  no        87  0   300   300 2483B  11%
+   1    57 image     157   301  icc     3   8  image  no        86  0   440   440 3457B 2.4%
+   1    58 image     156   301  icc     3   8  image  no        96  0   440   440 2966B 2.1%
+   1    59 image     107   204  rgb     3   8  image  no        97  0   300   300   86B 0.1%
+   1    60 smask     107   204  gray    1   8  image  no        97  0   300   300 2414B  11%
+   1    61 image     156   301  icc     3   8  image  no        96  0   440   440 2966B 2.1%
+   1    62 image     157   301  icc     3   8  image  no       106  0   440   440 2838B 2.0%
+   1    63 image     106   204  rgb     3   8  image  no       107  0   300   300   86B 0.1%
+   1    64 smask     106   204  gray    1   8  image  no       107  0   300   300 1900B 8.8%
+   1    65 image     157   301  icc     3   8  image  no       106  0   440   440 2838B 2.0%
+   1    66 image     157   302  icc     3   8  image  no       116  0   440   440 3504B 2.5%
+   1    67 image     107   206  rgb     3   8  image  no       117  0   300   300   87B 0.1%
+   1    68 smask     107   206  gray    1   8  image  no       117  0   300   300 2474B  11%
+   1    69 image     157   302  icc     3   8  image  no       116  0   440   440 3504B 2.5%
+   1    70 image     157   302  icc     3   8  image  no       126  0   440   440 3324B 2.3%
+   1    71 image     108   206  rgb     3   8  image  no       127  0   300   300   88B 0.1%
+   1    72 smask     108   206  gray    1   8  image  no       127  0   300   300 1829B 8.2%
+   1    73 image     157   302  icc     3   8  image  no       126  0   440   440 3324B 2.3%
+   1    74 image    1000   390  icc     3   8  image  no       145  0   670   670 36.8K 3.2%
+   1    75 image     448   171  rgb     3   8  image  no       146  0   300   300  245B 0.1%
+   1    76 smask     448   171  gray    1   8  image  no       146  0   300   300 6522B 8.5%
+   1    77 image    1000   390  icc     3   8  image  no       145  0   670   670 36.8K 3.2%
+   1    78 image     361   512  icc     3   8  image  no       155  0   440   440 73.5K  14%
+   1    79 image     247   347  rgb     3   8  image  no       156  0   300   300  272B 0.1%
+   1    80 smask     247   347  gray    1   8  image  no       156  0   300   300 6376B 7.4%
+   1    81 image     361   512  icc     3   8  image  no       155  0   440   440 73.5K  14%
+   1    82 image     372   528  icc     3   8  image  no       165  0   440   440 82.9K  14%
+   1    83 image     255   359  rgb     3   8  image  no       166  0   300   300  289B 0.1%
+   1    84 smask     255   359  gray    1   8  image  no       166  0   300   300 6489B 7.1%
+   1    85 image     372   528  icc     3   8  image  no       165  0   440   440 82.9K  14%
+   1    86 image     168   209  icc     3   8  image  no       175  0   440   440 14.6K  14%
+   1    87 image     113   141  rgb     3   8  image  no       176  0   300   300   69B 0.1%
+   1    88 smask     113   141  gray    1   8  image  no       176  0   300   300 2469B  15%
+   1    89 image     168   209  icc     3   8  image  no       175  0   440   440 14.6K  14%
+   1    90 image     131   132  icc     3   8  image  no       188  0   440   440 1944B 3.7%
+   1    91 image      90    90  rgb     3   8  image  no       189  0   300   300   46B 0.2%
+   1    92 smask      90    90  gray    1   8  image  no       189  0   300   300 1541B  19%
+   1    93 image     131   132  icc     3   8  image  no       188  0   440   440 1944B 3.7%
+   1    94 image     509   369  icc     3   8  image  no       206  0   440   440 5655B 1.0%
+   1    95 image     346   251  rgb     3   8  image  no       207  0   300   300  275B 0.1%
+   1    96 smask     346   251  gray    1   8  image  no       207  0   300   300 4440B 5.1%
+   1    97 image     509   369  icc     3   8  image  no       206  0   440   440 5655B 1.0%
+   1    98 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1    99 image     419   284  rgb     3   8  image  no       218  0   300   300  369B 0.1%
+   1   100 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   101 image     503   343  rgb     3   8  image  no       226  0   300   300  524B 0.1%
+   1   102 smask     503   343  gray    1   8  image  no       226  0   300   300 1234B 0.7%
+   1   103 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   104 image     419   284  rgb     3   8  image  no       218  0   300   300  369B 0.1%
+   1   105 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   106 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   107 image     420   285  rgb     3   8  image  no       235  0   300   300  370B 0.1%
+   1   108 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   109 image     504   343  rgb     3   8  image  no       243  0   300   300  525B 0.1%
+   1   110 smask     504   343  gray    1   8  image  no       243  0   300   300 1426B 0.8%
+   1   111 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   112 image     420   285  rgb     3   8  image  no       235  0   300   300  370B 0.1%
+   1   113 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   114 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   115 image     420   284  rgb     3   8  image  no       252  0   300   300  369B 0.1%
+   1   116 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   117 image     503   344  rgb     3   8  image  no       260  0   300   300  525B 0.1%
+   1   118 smask     503   344  gray    1   8  image  no       260  0   300   300 1455B 0.8%
+   1   119 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   120 image     420   284  rgb     3   8  image  no       252  0   300   300  369B 0.1%
+   1   121 image    1210   824  icc     3   8  image  no       217  0   867   867  383K  13%
+   1   122 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   123 image     443   301  rgb     3   8  image  no       270  0   300   300  410B 0.1%
+   1   124 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   125 image     531   363  rgb     3   8  image  no       278  0   300   300  583B 0.1%
+   1   126 smask     531   363  gray    1   8  image  no       278  0   300   300 1288B 0.7%
+   1   127 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   128 image     443   301  rgb     3   8  image  no       270  0   300   300  410B 0.1%
+   1   129 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   130 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   131 image     443   302  rgb     3   8  image  no       287  0   300   300  412B 0.1%
+   1   132 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   133 image     531   362  rgb     3   8  image  no       295  0   300   300  582B 0.1%
+   1   134 smask     531   362  gray    1   8  image  no       295  0   300   300 1313B 0.7%
+   1   135 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   136 image     443   302  rgb     3   8  image  no       287  0   300   300  412B 0.1%
+   1   137 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   138 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   139 image     442   299  rgb     3   8  image  no       304  0   300   300  407B 0.1%
+   1   140 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   141 image     531   363  rgb     3   8  image  no       312  0   300   300  583B 0.1%
+   1   142 smask     531   363  gray    1   8  image  no       312  0   300   300 1231B 0.6%
+   1   143 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   144 image     442   299  rgb     3   8  image  no       304  0   300   300  407B 0.1%
+   1   145 image    1210   824  icc     3   8  image  no       269  0   821   821  349K  12%
+   1   146 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   147 image     421   274  rgb     3   8  image  no       322  0   300   300  358B 0.1%
+   1   148 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   149 image     506   333  rgb     3   8  image  no       330  0   300   300  513B 0.1%
+   1   150 smask     506   333  gray    1   8  image  no       330  0   300   300 1337B 0.8%
+   1   151 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   152 image     421   274  rgb     3   8  image  no       322  0   300   300  358B 0.1%
+   1   153 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   154 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   155 image     420   274  rgb     3   8  image  no       339  0   300   300  357B 0.1%
+   1   156 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   157 image     506   332  rgb     3   8  image  no       347  0   300   300  511B 0.1%
+   1   158 smask     506   332  gray    1   8  image  no       347  0   300   300 1452B 0.9%
+   1   159 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   160 image     420   274  rgb     3   8  image  no       339  0   300   300  357B 0.1%
+   1   161 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   162 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   163 image     422   277  rgb     3   8  image  no       356  0   300   300  363B 0.1%
+   1   164 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   165 image     506   333  rgb     3   8  image  no       364  0   300   300  513B 0.1%
+   1   166 smask     506   333  gray    1   8  image  no       364  0   300   300 1453B 0.9%
+   1   167 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   168 image     422   277  rgb     3   8  image  no       356  0   300   300  363B 0.1%
+   1   169 image    1210   794  icc     3   8  image  no       321  0   862   862  312K  11%
+   1   170 image     384   288  icc     3   8  image  no       373  0   203   203 93.3K  29%
+   1   171 image     567   427  rgb     3   8  image  no       374  0   300   300  727B 0.1%
+   1   172 image     384   288  icc     3   8  image  no       373  0   203   203 93.3K  29%
+   1   173 image     683   512  rgb     3   8  image  no       382  0   300   300 1039B 0.1%
+   1   174 smask     683   512  gray    1   8  image  no       382  0   300   300 2158B 0.6%
+   1   175 image     384   288  icc     3   8  image  no       373  0   203   203 93.3K  29%
+   1   176 image     567   427  rgb     3   8  image  no       374  0   300   300  727B 0.1%
+   1   177 image     384   288  icc     3   8  image  no       373  0   203   203 93.3K  29%
+   1   178 image     350   288  icc     3   8  image  no       391  0   261   256  131K  44%
+   1   179 image     484   406  rgb     3   8  image  no       392  0   300   300  593B 0.1%
+   1   180 smask     484   406  gray    1   8  image  no       392  0   300   300  784B 0.4%
+   1   181 image     350   288  icc     3   8  image  no       391  0   261   256  131K  44%
+   1   182 image     484   406  rgb     3   8  image  no       401  0   300   300  593B 0.1%
+   1   183 smask     484   406  gray    1   8  image  no       401  0   300   300 1426B 0.7%
+   1   184 image     350   288  icc     3   8  image  no       391  0   261   256  131K  44%
+   1   185 image     484   406  rgb     3   8  image  no       392  0   300   300  593B 0.1%
+   1   186 smask     484   406  gray    1   8  image  no       392  0   300   300  784B 0.4%
+   1   187 image     350   288  icc     3   8  image  no       391  0   261   256  131K  44%
+   1   188 image     272   346  icc     3   8  image  no       410  0   353   353  109K  39%
+   1   189 image     228   296  rgb     3   8  image  no       411  0   300   300  219B 0.1%
+   1   190 image     272   346  icc     3   8  image  no       410  0   353   353  109K  39%
+   1   191 image     279   354  rgb     3   8  image  no       419  0   300   300  310B 0.1%
+   1   192 smask     279   354  gray    1   8  image  no       419  0   300   300 1283B 1.3%
+   1   193 image     272   346  icc     3   8  image  no       410  0   353   353  109K  39%
+   1   194 image     228   296  rgb     3   8  image  no       411  0   300   300  219B 0.1%
+   1   195 image     272   346  icc     3   8  image  no       410  0   353   353  109K  39%
+   1   196 image     675   271  icc     3   8  image  no       428  0   545   545 4150B 0.8%
+   1   197 image     373   149  rgb     3   8  image  no       429  0   300   300  184B 0.1%
+   1   198 smask     373   149  gray    1   8  image  no       429  0   300   300 4827B 8.7%
+   1   199 image     675   271  icc     3   8  image  no       428  0   545   545 4150B 0.8%
+   1   200 image     826   469  icc     3   8  image  no       438  0   751   751  133K  12%
+   1   201 image     330   188  rgb     3   8  image  no       439  0   300   300  203B 0.1%
+   1   202 image     826   469  icc     3   8  image  no       438  0   751   751  133K  12%
+   1   203 image     583   120  icc     3   8  image  no       447  0   440   440 7729B 3.7%
+   1   204 image     399    81  rgb     3   8  image  no       448  0   300   300  116B 0.1%
+   1   205 smask     399    81  gray    1   8  image  no       448  0   300   300 6821B  21%
+   1   206 image     583   120  icc     3   8  image  no       447  0   440   440 7729B 3.7%
 
-xref 18: 1629x2198 px placed 10.85x14.66 in → 150x150 dpi
+xref 18: 454x454 px placed 1.03x1.03 in → 440x440 dpi
+xref 31: 250x373 px placed 0.57x0.85 in → 440x440 dpi
+xref 46: 176x521 px placed 0.4x1.18 in → 440x440 dpi
+xref 56: 188x128 px placed 0.43x0.29 in → 440x440 dpi
+xref 66: 157x301 px placed 0.36x0.68 in → 440x440 dpi
+xref 76: 157x301 px placed 0.36x0.68 in → 440x440 dpi
+xref 86: 157x301 px placed 0.36x0.68 in → 440x440 dpi
+xref 96: 156x301 px placed 0.35x0.68 in → 440x440 dpi
+xref 106: 157x301 px placed 0.36x0.68 in → 440x440 dpi
+xref 116: 157x302 px placed 0.36x0.69 in → 440x440 dpi
+xref 126: 157x302 px placed 0.36x0.69 in → 440x440 dpi
+xref 145: 1000x390 px placed 1.49x0.58 in → 670x670 dpi
+xref 155: 361x512 px placed 0.82x1.16 in → 440x440 dpi
+xref 165: 372x528 px placed 0.84x1.2 in → 440x440 dpi
+xref 175: 168x209 px placed 0.38x0.47 in → 440x440 dpi
+xref 188: 131x132 px placed 0.3x0.3 in → 440x440 dpi
+xref 206: 509x369 px placed 1.16x0.84 in → 440x440 dpi
+xref 217: 1210x824 px placed 1.4x0.95 in → 867x867 dpi
+xref 269: 1210x824 px placed 1.47x1.0 in → 821x821 dpi
+xref 321: 1210x794 px placed 1.4x0.92 in → 862x862 dpi
+xref 373: 384x288 px placed 1.89x1.42 in → 203x203 dpi
+xref 391: 350x288 px placed 1.34x1.13 in → 261x256 dpi
+xref 410: 272x346 px placed 0.77x0.98 in → 353x353 dpi
+xref 428: 675x271 px placed 1.24x0.5 in → 545x545 dpi
+xref 438: 826x469 px placed 1.1x0.62 in → 751x751 dpi
+xref 447: 583x120 px placed 1.32x0.27 in → 440x440 dpi
 
 == 3. text sizes (PyMuPDF spans)
 sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 44.0, 48.0, 56.0, 60.0, 64.0, 92.0, 112.0]
@@ -76,7 +307,7 @@ decoded: ['https://github.com/Devanshpandey/Multimodal-integration-for-coronary-
     7.52:1  (need 3.0)  OK   extra-cardiac outline #8a3f00 vs white
 
 == 7. safe margin (1.0 in = 72 pt)
-closest approach to any edge (pt): {'text': 72.0, 'image': 93.8, 'vector': 72.0}
+closest approach to any edge (pt): {'text': 72.0, 'image': 112.2, 'vector': 72.0}
 offenders: none
 
 == 8. word count

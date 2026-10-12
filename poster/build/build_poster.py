@@ -225,14 +225,17 @@ ul li::marker{color:var(--img)} ol li::marker{color:var(--img);font-weight:700}
 
 # ---------------------------------------------------------------- HTML
 def build_html(ch):
-    cardiac, cardiac_sz = b64_png(os.path.join(ROOT, "images", "cardiac_cine_mri.png"))
-    abdominal, abd_sz = b64_png(os.path.join(ROOT, "images", "abdominal_mri.png"), upscale=3)
-    dxa, dxa_sz = b64_png(os.path.join(ROOT, "images", "dxa.png"), upscale=3)
     ut = svg_file(os.path.join(ROOT, "images", "logo_ut.svg"))
     oden = svg_file(os.path.join(ROOT, "images", "logo_oden.svg"))
     qr, qr_version = qr_svg(GITHUB_URL, 200)
-    fig1, fig1_sz = b64_png(os.path.join(ROOT, "images", "figure1_manuscript.png"))
-    FIG1_W = round(fig1_sz[0] / 150 * 72)  # width that keeps the native PNG at 150 ppi
+    # Figure 1: vector SVG exported from the authors' PDF with `pdftocairo -svg`
+    # (text already converted to glyph paths; embedded photos are 600 ppi).
+    fig1 = svg_file(os.path.join(ROOT, "images", "figure1_manuscript.svg"))
+    FIG1_W = 800  # pt; the SVG is 586.56 x 791.28 pt, so this gives 800 x 1079 pt
+    FIG1_H = round(FIG1_W * 791.28 / 586.56)
+    fig1 = re.sub(r'<svg ', f'<svg style="display:block;width:{FIG1_W}pt;height:{FIG1_H}pt" ', fig1, count=1)
+    fig1 = re.sub(r' width="586.56" height="791.28"', '', fig1, count=1)
+    fig1_sz = (FIG1_W, FIG1_H)
     hex_pt = CH["hexbin"][0]
     IMGH = 300
 
@@ -287,7 +290,7 @@ def build_html(ch):
 
   <div class="card fig1-card">
     <div class="fig1row">
-      <img src="{fig1}" alt="Figure 1 of the manuscript: multimodal framework for longitudinal CAD risk assessment" style="width:{FIG1_W}pt;height:auto;display:block">
+      <div role="img" aria-label="Figure 1 of the manuscript: multimodal framework for longitudinal CAD risk assessment">{fig1}</div>
       <div class="tiles vstack">
         <div class="tile"><span class="n">42,351</span><span class="l">UK Biobank imaging participants</span></div>
         <div class="tile"><span class="n">677</span><span class="l">incident CAD (1.6%)</span></div>
@@ -405,7 +408,7 @@ def build_html(ch):
 
 </div></body></html>
 """
-    meta = {"qr_version": qr_version, "fig1_px": fig1_sz, "fig1_w_pt": FIG1_W, "img_native": {"cardiac": cardiac_sz, "abdominal_x3": abd_sz, "dxa_x3": dxa_sz}}
+    meta = {"qr_version": qr_version, "fig1_pt": fig1_sz}
     return html, meta
 
 

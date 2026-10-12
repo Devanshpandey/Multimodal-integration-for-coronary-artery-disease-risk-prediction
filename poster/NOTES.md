@@ -102,13 +102,15 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
 17. **Footer removed entirely** at the presenter's request; its content moves to the GitHub repository reached by the QR code. The freed 2 in went into the charts: column 2 charts 6.0 in tall, paired R²/LOO 7.0 in, dumbbell 5.8 in, C-index and tier staircase 5.0 in each.
 18. **Hero numbers reduced from 140 pt to 92 pt** so no result number is larger than the 112-pt title; the title is back at 112 pt. Result tiles stay at 60/48 pt.
 
-19. **Manuscript Figure 1 replaces the HTML pipeline** (presenter's request). Source is
-    `assets/Figure1.png` (1629 × 2198 px, the largest copy available; the PDF-embedded copy is
-    1247 × 1684). It is placed at 10.85 × 14.66 in, exactly 150 ppi, with the six cohort tiles
-    stacked beside it so the card has no empty area. The labels inside the figure are part of the
-    raster (~12 pt at this scale) and are below the poster's 24-pt text floor; they are legible
-    at arm's length but not from a distance. A vector or ≥ 2,500-px export of Figure 1 would
-    allow a larger placement — drop it in as `poster/images/figure1_manuscript.png` and rebuild.
+19. **Manuscript Figure 1 replaces the HTML pipeline** (presenter's request). Source is the
+    authors' vector PDF (`images/figure1_manuscript_source.pdf`, BioRender/PDFKit, 586 × 791 pt,
+    Roboto/BentonSans text, photos at 600 ppi). It is converted to SVG with
+    `pdftocairo -svg` (text becomes glyph paths, so no extra fonts enter the poster) and inlined
+    at 800 × 1079 pt (11.1 × 15.0 in) with the six cohort tiles stacked beside it. PyMuPDF's own
+    SVG export was tried first and rejected: it drops the clip paths on the MRI thumbnails.
+    The cairo export was verified pixel-by-pixel against the PDF render (differences are
+    sub-pixel anti-aliasing only). Text inside the figure scales to ~12 pt — below the poster's
+    24-pt floor but crisp at any viewing distance; this is accepted as the figure is the authors'.
     The three sample-image thumbnails and the upscaling note in item 11 no longer apply.
 
 ### §5 Production
@@ -154,13 +156,13 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
 ## Remaining placeholders
 - Presenter e-mail (`[email placeholder]`, header).
 - No preprint DOI is on the poster; the footer was removed (fourth pass) and the QR-linked GitHub README is expected to carry the preprint link, data/code access, ethics, genetic disclosure, acknowledgements, competing interests, references and the outcome definition.
-- Figure 1 raster resolution (item 19) and the synthetic hexbin (item 12).
+- The synthetic hexbin (item 12).
 
 ## Audit summary (from `audit_poster.py`)
 - `pdfinfo`: 1 page, 5184 × 2592 pt for both PDFs. `pdffonts`: 16 subset CID TrueType fonts, all
   embedded, no Type 3 in `poster.pdf`; none in `poster_print.pdf`.
-- Rasters: the only raster is manuscript Figure 1, 1629 × 2198 px at 10.85 × 14.66 in = 150 ppi.
-  QR and logos are vector.
+- Rasters: only the photos embedded inside Figure 1 (MRI/DXA thumbnails, logos, icons), all
+  ≥ 203 ppi at placed size and most ≥ 440 ppi. QR, logos and Figure 1's drawing are vector.
 - Text: minimum 24 pt (affiliation superscripts); body 32 pt; chart ticks 26 pt, categories 27 pt; hero numbers 92 pt < title 112 pt.
 - QR decodes (zxing-cpp, 300 DPI) to the GitHub URL exactly, from both PDFs.
 - Contrast: every text/background pair ≥ 4.59 : 1; the extra-cardiac tint is 1.8 : 1 against white

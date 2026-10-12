@@ -18,8 +18,8 @@
     "FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0",
     "GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0",
     "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0",
-    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     20  0",
-    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     21  0"
+    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes    457  0",
+    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes    458  0"
    ]
   },
   "poster_print.pdf": {
@@ -35,16 +35,391 @@
   {
    "xref": 18,
    "px": [
-    1629,
-    2198
+    454,
+    454
    ],
    "placed_in": [
-    10.85,
-    14.66
+    1.03,
+    1.03
    ],
    "eff_dpi": [
-    150,
-    150
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 31,
+   "px": [
+    250,
+    373
+   ],
+   "placed_in": [
+    0.57,
+    0.85
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 46,
+   "px": [
+    176,
+    521
+   ],
+   "placed_in": [
+    0.4,
+    1.18
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 56,
+   "px": [
+    188,
+    128
+   ],
+   "placed_in": [
+    0.43,
+    0.29
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 66,
+   "px": [
+    157,
+    301
+   ],
+   "placed_in": [
+    0.36,
+    0.68
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 76,
+   "px": [
+    157,
+    301
+   ],
+   "placed_in": [
+    0.36,
+    0.68
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 86,
+   "px": [
+    157,
+    301
+   ],
+   "placed_in": [
+    0.36,
+    0.68
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 96,
+   "px": [
+    156,
+    301
+   ],
+   "placed_in": [
+    0.35,
+    0.68
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 106,
+   "px": [
+    157,
+    301
+   ],
+   "placed_in": [
+    0.36,
+    0.68
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 116,
+   "px": [
+    157,
+    302
+   ],
+   "placed_in": [
+    0.36,
+    0.69
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 126,
+   "px": [
+    157,
+    302
+   ],
+   "placed_in": [
+    0.36,
+    0.69
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 145,
+   "px": [
+    1000,
+    390
+   ],
+   "placed_in": [
+    1.49,
+    0.58
+   ],
+   "eff_dpi": [
+    670,
+    670
+   ]
+  },
+  {
+   "xref": 155,
+   "px": [
+    361,
+    512
+   ],
+   "placed_in": [
+    0.82,
+    1.16
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 165,
+   "px": [
+    372,
+    528
+   ],
+   "placed_in": [
+    0.84,
+    1.2
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 175,
+   "px": [
+    168,
+    209
+   ],
+   "placed_in": [
+    0.38,
+    0.47
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 188,
+   "px": [
+    131,
+    132
+   ],
+   "placed_in": [
+    0.3,
+    0.3
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 206,
+   "px": [
+    509,
+    369
+   ],
+   "placed_in": [
+    1.16,
+    0.84
+   ],
+   "eff_dpi": [
+    440,
+    440
+   ]
+  },
+  {
+   "xref": 217,
+   "px": [
+    1210,
+    824
+   ],
+   "placed_in": [
+    1.4,
+    0.95
+   ],
+   "eff_dpi": [
+    867,
+    867
+   ]
+  },
+  {
+   "xref": 269,
+   "px": [
+    1210,
+    824
+   ],
+   "placed_in": [
+    1.47,
+    1.0
+   ],
+   "eff_dpi": [
+    821,
+    821
+   ]
+  },
+  {
+   "xref": 321,
+   "px": [
+    1210,
+    794
+   ],
+   "placed_in": [
+    1.4,
+    0.92
+   ],
+   "eff_dpi": [
+    862,
+    862
+   ]
+  },
+  {
+   "xref": 373,
+   "px": [
+    384,
+    288
+   ],
+   "placed_in": [
+    1.89,
+    1.42
+   ],
+   "eff_dpi": [
+    203,
+    203
+   ]
+  },
+  {
+   "xref": 391,
+   "px": [
+    350,
+    288
+   ],
+   "placed_in": [
+    1.34,
+    1.13
+   ],
+   "eff_dpi": [
+    261,
+    256
+   ]
+  },
+  {
+   "xref": 410,
+   "px": [
+    272,
+    346
+   ],
+   "placed_in": [
+    0.77,
+    0.98
+   ],
+   "eff_dpi": [
+    353,
+    353
+   ]
+  },
+  {
+   "xref": 428,
+   "px": [
+    675,
+    271
+   ],
+   "placed_in": [
+    1.24,
+    0.5
+   ],
+   "eff_dpi": [
+    545,
+    545
+   ]
+  },
+  {
+   "xref": 438,
+   "px": [
+    826,
+    469
+   ],
+   "placed_in": [
+    1.1,
+    0.62
+   ],
+   "eff_dpi": [
+    751,
+    751
+   ]
+  },
+  {
+   "xref": 447,
+   "px": [
+    583,
+    120
+   ],
+   "placed_in": [
+    1.32,
+    0.27
+   ],
+   "eff_dpi": [
+    440,
+    440
    ]
   }
  ],
@@ -124,7 +499,7 @@
     ]
    ]
   ],
-  "n_spans": 348
+  "n_spans": 350
  },
  "4_renders": {
   "distance_15dpi": "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png",
@@ -215,7 +590,7 @@
  "7_margins": {
   "worst_distance_pt": {
    "text": 72.0,
-   "image": 93.8,
+   "image": 112.2,
    "vector": 72.0
   },
   "offenders": []

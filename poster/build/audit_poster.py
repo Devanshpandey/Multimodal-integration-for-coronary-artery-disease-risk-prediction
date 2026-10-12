@@ -56,9 +56,14 @@ def check_images():
     doc = pymupdf.open(PDF)
     page = doc[0]
     rows = []
+    seen = set()
     for info in page.get_images(full=True):
         xref, w, h = info[0], info[2], info[3]
         for r in page.get_image_rects(xref):
+            key = (xref, round(r.width), round(r.height))
+            if key in seen:
+                continue
+            seen.add(key)
             dpi_x = w / (r.width / 72)
             dpi_y = h / (r.height / 72)
             rows.append({"xref": xref, "px": [w, h], "placed_in": [round(r.width / 72, 2), round(r.height / 72, 2)],
