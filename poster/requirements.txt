@@ -1,0 +1,7 @@
+reportlab>=4.0
+pikepdf>=8
+qrcode>=7
+svglib>=1.5
+pypdf>=4
+opencv-python-headless>=4.8   # QA only (QR decode)
+Pillow>=10

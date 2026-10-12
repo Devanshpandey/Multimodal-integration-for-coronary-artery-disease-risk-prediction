@@ -1,0 +1,142 @@
+{
+  "logos": {
+    "ut_austin": [
+      "placeholder",
+      null
+    ],
+    "oden": [
+      "placeholder",
+      null
+    ]
+  },
+  "title_pt": 100,
+  "header_bottom_in": 6.1,
+  "takehome_pt": 50,
+  "col1_remaining_in": 0.37,
+  "hexbin": {
+    "placed_w_in": 5.46,
+    "placed_h_in": 4.386666666666667,
+    "native_px": [
+      819,
+      658
+    ],
+    "eff_dpi": 150.0
+  },
+  "col2_remaining_in": 0.35,
+  "col3_remaining_in": 0.58,
+  "pdf_boxes": {
+    "MediaBox": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ],
+    "TrimBox": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ]
+  },
+  "words": {
+    "takehome": 20,
+    "c1_question": 48,
+    "c1_methods": 78,
+    "c1_cap_b": 37,
+    "c2_intro": 26,
+    "c2_hex_note": 27,
+    "c2_cap_d": 31,
+    "c3_intro": 26,
+    "c3_subgroup": 55,
+    "c3_cap_f": 36,
+    "c3_cap_sup": 29,
+    "c3_conclusion": 32,
+    "c3_limitations": 57,
+    "footer_0": 41,
+    "footer_1": 13,
+    "footer_2": 42,
+    "footer_3": 22
+  },
+  "words_total_body": 502,
+  "words_total_all": 620,
+  "geometry": {
+    "pages": 1,
+    "mediabox_pt": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ],
+    "trimbox_pt": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ],
+    "size_in": [
+      72.0,
+      36.0
+    ],
+    "ok": true
+  },
+  "fonts": {
+    "table": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAA+SourceSans3-Regular           TrueType          WinAnsi          yes yes yes     12  0\nAAAAAA+SourceSans3-Bold              TrueType          WinAnsi          yes yes yes     13  0\nAAAAAA+SourceSans3-Semibold          TrueType          WinAnsi          yes yes yes     14  0\nAAAAAA+SourceSans3-It                TrueType          WinAnsi          yes yes yes     15  0\n",
+    "all_embedded": true,
+    "count": 4
+  },
+  "images": {
+    "table": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n   1     0 image     819   658  rgb     3   8  image  no        10  0   150   150 35.1K 2.2%\n   1     1 image      26   322  rgb     3   8  image  no        11  0    81   133  763B 3.0%\n",
+    "min_ppi": 81
+  },
+  "links": [
+    "https://github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction",
+    "https://www.medrxiv.org/content/10.1101/2025.10.09.25337677"
+  ],
+  "text": {
+    "chars": 9374,
+    "has_title": true,
+    "numbers_present": {
+      "42,351": true,
+      "677": true,
+      "0.666": true,
+      "0.770": true,
+      "0.065": true,
+      "0.004": true,
+      "29,075": true,
+      "0.749": true,
+      "0.788": true,
+      "0.813": true,
+      "0.819": true,
+      "8.0%": true,
+      "11.3%": true,
+      "15.9%": true,
+      "36.8%": true,
+      "0.805": true,
+      "0.822": true,
+      "0.785": true,
+      "0.795": true,
+      "0.762": true,
+      "0.748": true,
+      "0.751": true,
+      "0.732": true,
+      "0.634": true,
+      "65439": true,
+      "38.41%": true,
+      "14.42%": true,
+      "0.15%": true
+    }
+  },
+  "qr": {
+    "decoded": "https://www.medrxiv.org/content/10.1101/2025.10.09.25337677",
+    "ok": true
+  },
+  "cap_heights_in": {
+    "title": 0.92,
+    "takehome": 0.46,
+    "section": 0.42,
+    "body": 0.3,
+    "caption": 0.25,
+    "footer": 0.24
+  },
+  "file_size_mb": 0.12
+}

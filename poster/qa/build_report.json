@@ -1,0 +1,62 @@
+{
+  "logos": {
+    "ut_austin": [
+      "placeholder",
+      null
+    ],
+    "oden": [
+      "placeholder",
+      null
+    ]
+  },
+  "title_pt": 100,
+  "header_bottom_in": 6.1,
+  "takehome_pt": 50,
+  "col1_remaining_in": 0.37,
+  "hexbin": {
+    "placed_w_in": 5.46,
+    "placed_h_in": 4.386666666666667,
+    "native_px": [
+      819,
+      658
+    ],
+    "eff_dpi": 150.0
+  },
+  "col2_remaining_in": 0.35,
+  "col3_remaining_in": 0.58,
+  "pdf_boxes": {
+    "MediaBox": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ],
+    "TrimBox": [
+      0.0,
+      0.0,
+      5184.0,
+      2592.0
+    ]
+  },
+  "words": {
+    "takehome": 20,
+    "c1_question": 48,
+    "c1_methods": 78,
+    "c1_cap_b": 37,
+    "c2_intro": 26,
+    "c2_hex_note": 27,
+    "c2_cap_d": 31,
+    "c3_intro": 26,
+    "c3_subgroup": 55,
+    "c3_cap_f": 36,
+    "c3_cap_sup": 29,
+    "c3_conclusion": 32,
+    "c3_limitations": 57,
+    "footer_0": 41,
+    "footer_1": 13,
+    "footer_2": 42,
+    "footer_3": 22
+  },
+  "words_total_body": 502,
+  "words_total_all": 620
+}
