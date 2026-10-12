@@ -201,6 +201,12 @@ ul li::marker{color:var(--img)} ol li::marker{color:var(--img);font-weight:700}
 .note.it{font-style:italic}
 .note b{font-weight:700}
 
+/* ---------- column 1 figure 1 card ---------- */
+.fig1row{display:grid;grid-template-columns:auto 1fr;column-gap:20pt;align-items:stretch}
+.tiles.vstack{grid-template-columns:1fr;align-content:space-between}
+.tiles.vstack .n{font-size:56pt;line-height:1.1}
+.tiles.vstack .l{font-size:26pt}
+
 /* ---------- column 3 hexbin card ---------- */
 .hexrow{display:grid;grid-template-columns:__HEX__pt 1fr;column-gap:22pt;align-items:start}
 .stack{display:flex;flex-direction:column;gap:10pt}
@@ -225,6 +231,8 @@ def build_html(ch):
     ut = svg_file(os.path.join(ROOT, "images", "logo_ut.svg"))
     oden = svg_file(os.path.join(ROOT, "images", "logo_oden.svg"))
     qr, qr_version = qr_svg(GITHUB_URL, 200)
+    fig1, fig1_sz = b64_png(os.path.join(ROOT, "images", "figure1_manuscript.png"))
+    FIG1_W = round(fig1_sz[0] / 150 * 72)  # width that keeps the native PNG at 150 ppi
     hex_pt = CH["hexbin"][0]
     IMGH = 300
 
@@ -277,41 +285,20 @@ def build_html(ch):
     </ol>
   </div>
 
-  <div class="card pipe-card">
-    <div class="pipe">
-      <div class="lane">
-        <div class="tag img">Imaging<br>8 streams</div>
-        <div class="body"><div class="imgs">
-          <figure><img src="{cardiac}" alt="Cardiac cine MRI, long-axis view"><figcaption>Cardiac cine MRI</figcaption></figure>
-          <figure><img src="{abdominal}" alt="Abdominal MRI slice (liver and pancreas)"><figcaption>Abdominal MRI</figcaption></figure>
-          <figure><img src="{dxa}" alt="Whole-body DXA scan"><figcaption>DXA</figcaption></figure>
-        </div></div>
+  <div class="card fig1-card">
+    <div class="fig1row">
+      <img src="{fig1}" alt="Figure 1 of the manuscript: multimodal framework for longitudinal CAD risk assessment" style="width:{FIG1_W}pt;height:auto;display:block">
+      <div class="tiles vstack">
+        <div class="tile"><span class="n">42,351</span><span class="l">UK Biobank imaging participants</span></div>
+        <div class="tile"><span class="n">677</span><span class="l">incident CAD (1.6%)</span></div>
+        <div class="tile"><span class="n">4.6 yr</span><span class="l">median follow-up</span></div>
+        <div class="tile"><span class="n">211,755</span><span class="l">cardiac cine MRI series</span></div>
+        <div class="tile"><span class="n">127,053</span><span class="l">2D images (liver, pancreas, DXA)</span></div>
+        <div class="tile"><span class="n">10,597</span><span class="l">held-out test set (178 cases)</span></div>
       </div>
-      <div class="lane"><div></div><div class="body"><div class="box img">CNN encoders → PCA · 10 PCs per stream</div></div></div>
-      <div class="lane">
-        <div class="tag prs">Genetics</div>
-        <div class="body"><div class="box prs">UKB genotypes</div><div class="arrow">→</div><div class="box prs">GWAS meta-analysis: UKB + FinnGen + MVP</div><div class="arrow">→</div><div class="box prs">PRS-CS score</div></div>
-      </div>
-      <div class="lane">
-        <div class="tag clin">Clinical</div>
-        <div class="body"><div class="box clin">ECG intervals, amplitudes</div><div class="box clin">Lipid panel</div><div class="box clin">Demographics, medication</div></div>
-      </div>
-      <div class="down">↓</div>
-      <div class="conv"><div class="box grey">Tabular features · 75 / 25 split</div></div>
-      <div class="down">↓</div>
-      <div class="conv"><div class="box dark">Cox models → tiered risk stratification</div></div>
     </div>
-    <p class="note it" style="margin-top:14pt">Cardiac MRI does not image coronary atherosclerosis; its signal reflects remodeling, vascular stiffness and cardiometabolic burden.</p>
-    <p class="note" style="margin-top:6pt"><b>Outcome = clinically recognized CAD</b> (MI, angina, revascularization); prevalent cases excluded.</p>
-  </div>
-
-  <div class="tiles six">
-    <div class="tile"><span class="n">42,351</span><span class="l">UK Biobank imaging participants</span></div>
-    <div class="tile"><span class="n">677</span><span class="l">incident CAD (1.6%)</span></div>
-    <div class="tile"><span class="n">4.6 yr</span><span class="l">median follow-up</span></div>
-    <div class="tile"><span class="n">211,755</span><span class="l">cardiac cine MRI series</span></div>
-    <div class="tile"><span class="n">127,053</span><span class="l">2D images (liver, pancreas, DXA)</span></div>
-    <div class="tile"><span class="n">10,597</span><span class="l">held-out test set (178 cases)</span></div>
+    <p class="note it" style="margin-top:12pt">Cardiac MRI does not image coronary atherosclerosis; its signal reflects remodeling, vascular stiffness and cardiometabolic burden.</p>
+    <p class="note" style="margin-top:6pt"><b>Outcome = clinically recognized CAD</b> (MI, angina, revascularization); prevalent cases excluded. Fig. 1 of the manuscript: three data domains → tabular features → classification and Cox survival models.</p>
   </div>
 
   <div class="body-text">
@@ -418,7 +405,7 @@ def build_html(ch):
 
 </div></body></html>
 """
-    meta = {"qr_version": qr_version, "img_native": {"cardiac": cardiac_sz, "abdominal_x3": abd_sz, "dxa_x3": dxa_sz}}
+    meta = {"qr_version": qr_version, "fig1_px": fig1_sz, "fig1_w_pt": FIG1_W, "img_native": {"cardiac": cardiac_sz, "abdominal_x3": abd_sz, "dxa_x3": dxa_sz}}
     return html, meta
 
 

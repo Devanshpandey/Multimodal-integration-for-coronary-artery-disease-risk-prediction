@@ -3,7 +3,7 @@
   "poster.pdf": {
    "pages": 1,
    "page_size_pt": "5184 x 2592",
-   "n_fonts": 15,
+   "n_fonts": 13,
    "all_embedded": true,
    "type3": false,
    "fonts": [
@@ -18,10 +18,8 @@
     "FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0",
     "GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0",
     "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0",
-    "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0",
-    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     19  0",
-    "DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     23  0",
-    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     26  0"
+    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     20  0",
+    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     21  0"
    ]
   },
   "poster_print.pdf": {
@@ -35,48 +33,18 @@
  },
  "2_images": [
   {
-   "xref": 20,
+   "xref": 18,
    "px": [
-    1210,
-    824
+    1629,
+    2198
    ],
    "placed_in": [
-    6.12,
-    4.17
+    10.85,
+    14.66
    ],
    "eff_dpi": [
-    198,
-    198
-   ]
-  },
-  {
-   "xref": 24,
-   "px": [
-    864,
-    864
-   ],
-   "placed_in": [
-    4.17,
-    4.17
-   ],
-   "eff_dpi": [
-    207,
-    207
-   ]
-  },
-  {
-   "xref": 25,
-   "px": [
-    816,
-    1038
-   ],
-   "placed_in": [
-    3.27,
-    4.17
-   ],
-   "eff_dpi": [
-    249,
-    249
+    150,
+    150
    ]
   }
  ],
@@ -91,9 +59,9 @@
    30.0,
    32.0,
    36.0,
-   40.0,
    44.0,
    48.0,
+   56.0,
    60.0,
    64.0,
    92.0,
@@ -156,7 +124,7 @@
     ]
    ]
   ],
-  "n_spans": 375
+  "n_spans": 348
  },
  "4_renders": {
   "distance_15dpi": "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png",
@@ -247,19 +215,19 @@
  "7_margins": {
   "worst_distance_pt": {
    "text": 72.0,
-   "image": 257.2,
+   "image": 93.8,
    "vector": 72.0
   },
   "offenders": []
  },
  "8_words": {
   "body_text_blocks": 187,
-  "pipeline_boxes_and_notes": 78,
+  "pipeline_boxes_and_notes": 0,
   "cohort_and_result_tiles": 69,
   "hero_subtitles": 59,
   "captions": 190,
   "header": 122,
-  "BODY_TOTAL_excl_header_footer_captions": 393
+  "BODY_TOTAL_excl_header_footer_captions": 315
  },
  "hero_tokens": {
   "found": {

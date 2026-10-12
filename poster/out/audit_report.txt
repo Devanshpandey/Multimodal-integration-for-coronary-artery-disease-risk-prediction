@@ -1,6 +1,6 @@
 
 == 1. pdfinfo / pdffonts
-poster.pdf: pages=1 size=5184 x 2592 pt fonts=15 all_embedded=True type3=False
+poster.pdf: pages=1 size=5184 x 2592 pt fonts=13 all_embedded=True type3=False
     AAAAAA+InterTight-Bold               CID TrueType      Identity-H       yes yes yes      4  0
     BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      5  0
     BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      6  0
@@ -12,25 +12,19 @@ poster.pdf: pages=1 size=5184 x 2592 pt fonts=15 all_embedded=True type3=False
     FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0
     GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0
     HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0
-    EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0
-    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     19  0
-    DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     23  0
-    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     26  0
+    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     20  0
+    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     21  0
 poster_print.pdf: pages=1 size=5184 x 2592 pt fonts=0 all_embedded=True type3=False
 
 == 2. raster images (effective DPI at placed size)
 page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
 --------------------------------------------------------------------------------------------
-   1     0 image    1210   824  icc     3   8  image  no        20  0   198   198  383K  13%
-   1     1 image     864   864  icc     3   8  image  no        24  0   207   207  639K  29%
-   1     2 image     816  1038  icc     3   8  image  no        25  0   249   249  781K  31%
+   1     0 image    1629  2198  icc     3   8  image  no        18  0   150   150  345K 3.3%
 
-xref 20: 1210x824 px placed 6.12x4.17 in → 198x198 dpi
-xref 24: 864x864 px placed 4.17x4.17 in → 207x207 dpi
-xref 25: 816x1038 px placed 3.27x4.17 in → 249x249 dpi
+xref 18: 1629x2198 px placed 10.85x14.66 in → 150x150 dpi
 
 == 3. text sizes (PyMuPDF spans)
-sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 40.0, 44.0, 48.0, 60.0, 64.0, 92.0, 112.0]
+sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 44.0, 48.0, 56.0, 60.0, 64.0, 92.0, 112.0]
 min size: 24.0 pt
 five smallest spans:
    24.0 pt  Inter-Regular              '1'
@@ -62,10 +56,6 @@ Inter spans below 32 pt (should only be author superscripts):
    30.0 pt Inter-Regular 'Internal Medicine, Dell Medical School ·'
    30.0 pt Inter-Regular 'Statistics and Data Sciences — The Unive'
    30.0 pt Inter-Regular 'UT Health Science Center, Houston'
-   30.0 pt Inter-Regular '→'
-   30.0 pt Inter-Regular '→'
-   30.0 pt Inter-Regular '↓'
-   30.0 pt Inter-Regular '↓'
 
 == 4. distance / collision renders written: /home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png and crop_col1-4.png (inspect visually)
 
@@ -86,17 +76,17 @@ decoded: ['https://github.com/Devanshpandey/Multimodal-integration-for-coronary-
     7.52:1  (need 3.0)  OK   extra-cardiac outline #8a3f00 vs white
 
 == 7. safe margin (1.0 in = 72 pt)
-closest approach to any edge (pt): {'text': 72.0, 'image': 257.2, 'vector': 72.0}
+closest approach to any edge (pt): {'text': 72.0, 'image': 93.8, 'vector': 72.0}
 offenders: none
 
 == 8. word count
    body_text_blocks: 187
-   pipeline_boxes_and_notes: 78
+   pipeline_boxes_and_notes: 0
    cohort_and_result_tiles: 69
    hero_subtitles: 59
    captions: 190
    header: 122
-   BODY_TOTAL_excl_header_footer_captions: 393
+   BODY_TOTAL_excl_header_footer_captions: 315
 
 == hero tokens in page.get_text(): {'36.8%': True, '0.770 vs 0.666': True, 'r ≈ 0.05': True}
    context: integration finds very-high-risk people⏎36.8%⏎5-yr CAD incidence, top quintile of both imaging and⏎g

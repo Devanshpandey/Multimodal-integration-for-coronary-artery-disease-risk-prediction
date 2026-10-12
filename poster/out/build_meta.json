@@ -1,5 +1,10 @@
 {
  "qr_version": 6,
+ "fig1_px": [
+  1629,
+  2198
+ ],
+ "fig1_w_pt": 782,
  "img_native": {
   "cardiac": [
    1210,
