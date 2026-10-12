@@ -80,15 +80,15 @@ INNER = COL_W - 2 * CARD_PAD                        # 1183 (16.4 in)
 
 # chart boxes (pt)
 CH = {
-    "idp": (INNER, 5.0 * 72),
-    "cca": (INNER, 5.0 * 72),
-    "pre3d": ((INNER - 20) / 2, 5.0 * 72),
-    "pre2d": ((INNER - 20) / 2, 5.0 * 72),
+    "idp": (INNER, 6.0 * 72),
+    "cca": (INNER, 6.0 * 72),
+    "pre3d": ((INNER - 20) / 2, 6.0 * 72),
+    "pre2d": ((INNER - 20) / 2, 6.0 * 72),
     "hexbin": (8.0 * 72, 8.0 * 72),
-    "r2loo": (INNER, 6.4 * 72),
-    "uniq": (INNER, 5.0 * 72),
-    "cindex": (INNER, 4.2 * 72),
-    "tiers": (INNER, 4.2 * 72),
+    "r2loo": (INNER, 7.0 * 72),
+    "uniq": (INNER, 5.8 * 72),
+    "cindex": (INNER, 5.0 * 72),
+    "tiers": (INNER, 5.0 * 72),
 }
 
 
@@ -134,7 +134,7 @@ html,body{width:5184pt;height:2592pt;background:#fff;color:#333f48;font-family:'
 .hdr{display:grid;grid-template-columns:600pt 1fr 300pt;column-gap:56pt;align-items:start}
 .logos{display:flex;flex-direction:column;gap:18pt;padding-top:6pt}
 .logos img{display:block}
-.titleblock h1{font-family:'Inter Tight';font-weight:700;font-size:102pt;line-height:1.06;letter-spacing:-0.012em}
+.titleblock h1{font-family:'Inter Tight';font-weight:700;font-size:112pt;line-height:1.06;letter-spacing:-0.012em}
 .authors{font-size:44pt;line-height:1.2;margin-top:12pt}
 .authors sup{font-size:26.4pt;line-height:0}
 .affil{font-size:30pt;line-height:1.3;color:var(--muted);margin-top:4pt}
@@ -154,14 +154,14 @@ html,body{width:5184pt;height:2592pt;background:#fff;color:#333f48;font-family:'
 
 /* ---------- columns ---------- */
 .cols{display:grid;grid-template-columns:repeat(4,__COLW__pt);column-gap:__COLGAP__pt;margin-top:8pt;flex:1 1 auto;min-height:0}
-.col{display:flex;flex-direction:column;gap:12pt;min-height:0}
+.col{display:flex;flex-direction:column;gap:16pt;min-height:0}
 .sechead .bar{background:var(--img);color:#fff;font-size:64pt;font-weight:600;line-height:1.2;padding:0 24pt;letter-spacing:0.01em;border-radius:4pt 4pt 0 0}
 .sechead .sub{font-size:44pt;font-weight:600;line-height:1.2;border-bottom:3pt solid var(--ink);padding:0 0 2pt}
 .card{background:#fff;border:2pt solid var(--rule);border-radius:8pt;padding:__CARDPAD__pt;position:relative}
 .card svg{display:block}
 .cap{font-family:'Source Sans 3';font-size:26pt;line-height:1.2;margin-top:6pt}
 .cap b{font-weight:700}
-.hero{font-family:'Inter Tight';font-weight:800;font-size:140pt;line-height:1.0;letter-spacing:-0.02em;display:block;color:var(--ink)}
+.hero{font-family:'Inter Tight';font-weight:800;font-size:92pt;line-height:1.0;letter-spacing:-0.02em;display:block;color:var(--ink)}
 .hero.orange{color:var(--img)}
 .hero-sub{display:block;font-family:'Source Sans 3';font-size:28pt;line-height:1.2;margin-top:2pt}
 h3{font-size:36pt;font-weight:600;line-height:1.2;margin-top:0}
@@ -181,7 +181,7 @@ ul li::marker{color:var(--img)} ol li::marker{color:var(--img);font-weight:700}
 .tile.row .l{font-size:24pt}
 
 /* ---------- column 1 pipeline ---------- */
-.pipe{display:flex;flex-direction:column;gap:14pt}
+.pipe{display:flex;flex-direction:column;gap:26pt}
 .lane{display:grid;grid-template-columns:150pt 1fr;column-gap:14pt;align-items:stretch}
 .lane .tag{color:#fff;font-family:'Source Sans 3';font-weight:700;font-size:27pt;line-height:1.15;display:flex;align-items:center;justify-content:center;text-align:center;border-radius:6pt;padding:6pt}
 .tag.img{background:var(--img)} .tag.prs{background:var(--prs)} .tag.clin{background:#5e6973}
@@ -204,7 +204,7 @@ ul li::marker{color:var(--img)} ol li::marker{color:var(--img);font-weight:700}
 /* ---------- column 3 hexbin card ---------- */
 .hexrow{display:grid;grid-template-columns:__HEX__pt 1fr;column-gap:22pt;align-items:start}
 .stack{display:flex;flex-direction:column;gap:10pt}
-.stack .hero{font-size:140pt}
+.stack .hero{font-size:92pt}
 .stack .lbl{font-family:'Source Sans 3';font-weight:700;font-size:26pt;line-height:1.3;margin-top:6pt}
 .stack .tile.row{padding:6pt 16pt}
 
@@ -214,10 +214,6 @@ ul li::marker{color:var(--img)} ol li::marker{color:var(--img);font-weight:700}
 .loo{font-family:'Source Sans 3';font-size:26pt;line-height:1.3;margin-top:8pt}
 .sidepanels{display:grid;grid-template-columns:1fr 1fr;column-gap:20pt}
 
-/* ---------- footer ---------- */
-footer{font-family:'Source Sans 3';font-size:24pt;line-height:1.3;margin-top:14pt;border-top:2pt solid var(--rule);padding-top:8pt}
-footer b{font-weight:700}
-footer .ph{color:var(--img);font-weight:700}
 """
 
 
@@ -418,16 +414,7 @@ def build_html(ch):
 
 </main>
 
-<footer>
-<b>Data &amp; code.</b> UK Biobank application 65439. Code at github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction (QR above).
-<b>Ethics.</b> UK Biobank participants provided informed consent; study conducted under UK Biobank approval.
-<b>Genetic disclosure.</b> The genetic component is a genome-wide polygenic score (PRS-CS, HapMap3 variants) from a European meta-analysis of non-imaged UKB + FinnGen + MVP (229,724 cases / 1,024,752 controls); no single gene is claimed. GWAS summary statistics and PRS-CS weights are deposited in the repository.
-<b>Acknowledgements.</b> Computing via the TACC Director's Discretionary Fund (Corral, Lonestar6, NVIDIA A100). D.P.: Outstanding Graduate Research Fellowship, UT Austin Graduate School. V.M.N.: Allen Discovery Center program (Paul G. Allen Frontiers Group) and a Good Systems Fellowship for Ethical AI, UT Austin.
-<b>Competing interests.</b> C.A.T. founded HeartFlow, Inc. and serves on the boards of HeartFlow, Inc. and Ebenbuild GmbH. Other authors declare none.
-<b>Key references.</b> UK Biobank: Sudlow 2015 <i>PLoS Med</i> · PRS-CS: Ge 2019 <i>Nat Commun</i> · GPSmult: Patel 2023 <i>Nat Med</i> · Med3D: Chen 2019 <i>arXiv</i> · RadImageNet: Mei 2022 <i>Radiol AI</i> · REGENIE: Mbatchou 2021 <i>Nat Genet</i> · SCORE2 2021 <i>Eur Heart J</i> · PCE: Goff 2014 <i>Circulation</i>.
-<b>Outcome definition.</b> Incident CAD = ICD-10 I20–I25, ICD-9 410/412/414, OPCS-4 K40–K50, K75; prevalent cases excluded; follow-up from the first imaging visit.
-<span class="ph">[Previously published: JOURNAL, DATE — remove if not applicable]</span>
-</footer>
+<!-- footer removed: data/code, ethics, disclosures and references live in the GitHub repository reached by the QR code -->
 
 </div></body></html>
 """
@@ -446,8 +433,8 @@ MEASURE_JS = """
     for (const c of el.children) { maxBottom = Math.max(maxBottom, c.getBoundingClientRect().bottom); }
     out[id] = {top: pt(r.top), bottom: pt(r.bottom), content_bottom: pt(maxBottom), overflow_pt: pt(maxBottom - r.bottom)};
   }
-  const f = document.querySelector('footer').getBoundingClientRect();
-  out.footer = {top: pt(f.top), bottom: pt(f.bottom)};
+  const f = document.querySelector('footer');
+  out.footer = f ? {top: pt(f.getBoundingClientRect().top), bottom: pt(f.getBoundingClientRect().bottom)} : null;
   const h = document.querySelector('.hdr').getBoundingClientRect();
   out.header = {top: pt(h.top), bottom: pt(h.bottom)};
   out.page = {h: pt(document.querySelector('.page').getBoundingClientRect().height)};

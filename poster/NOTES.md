@@ -16,6 +16,7 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
 | file | what |
 |---|---|
 | `poster.pdf` | 72 × 36 in, fonts embedded (print file for printers that accept fonts) |
+| `dist/ASHG2026_poster.zip` | everything below in one download |
 | `poster_print.pdf` | same page with every glyph converted to filled paths; `pdffonts` lists no fonts |
 | `preview.png` | 20 DPI, 1440 × 720 |
 | `crop_col1-4.png` | each column at 72 DPI |
@@ -97,6 +98,10 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
     0.775)" on the hero subtitle). The "Clinical" lane tag uses #5e6973 instead of the key grey so
     its white text reaches 5.6 : 1.
 
+### Fourth pass (follow-up)
+17. **Footer removed entirely** at the presenter's request; its content moves to the GitHub repository reached by the QR code. The freed 2 in went into the charts: column 2 charts 6.0 in tall, paired R²/LOO 7.0 in, dumbbell 5.8 in, C-index and tier staircase 5.0 in each.
+18. **Hero numbers reduced from 140 pt to 92 pt** so no result number is larger than the 112-pt title; the title is back at 112 pt. Result tiles stay at 60/48 pt.
+
 ### §5 Production
 15. **Outlines.** Ghostscript is not installable in the build container, so `poster_print.pdf` is
     produced by `render_outputs.py`: each glyph in the PDF text trace is drawn as a filled path
@@ -106,7 +111,7 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
     of hinted text vs paths).
 16. **Word count.** Body text in the strict sense (Background, questions, Methods, Conclusions,
     Limitations) is 187 words. Including pipeline box labels (78), tile labels (69) and the hero
-    subtitles (59) it is 393. Captions (190), header (122) and footer (210) are excluded. Nothing
+    subtitles (59) it is 393. Captions (190) and the header (122) are excluded; there is no footer. Nothing
     was cut to reach 300 because that would remove content; trim the tile and pipeline labels if
     the stricter reading is intended.
 
@@ -140,8 +145,7 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
 
 ## Remaining placeholders
 - Presenter e-mail (`[email placeholder]`, header).
-- `[Previously published: JOURNAL, DATE — remove if not applicable]` (footer, orange).
-- No preprint DOI is on the poster; add one to the footer "Data & code" sentence if it exists.
+- No preprint DOI is on the poster; the footer was removed (fourth pass) and the QR-linked GitHub README is expected to carry the preprint link, data/code access, ethics, genetic disclosure, acknowledgements, competing interests, references and the outcome definition.
 - Two low-resolution sample images and the synthetic hexbin (items 11 and 12 above).
 
 ## Audit summary (from `audit_poster.py`)
@@ -150,7 +154,7 @@ below). Layout, palette and wording follow v2 except where this pass asked for c
 - Rasters: cardiac 1210 × 824 px at 6.12 × 4.17 in = 198 ppi; abdominal 864 × 864 px at 4.17 in =
   207 ppi (3× resample of 288 px); DXA 816 × 1038 px at 3.27 × 4.17 in = 249 ppi (3× of 272 px).
   QR and logos are vector.
-- Text: minimum 24 pt (affiliation superscripts); body 32 pt; chart ticks 26 pt, categories 27 pt.
+- Text: minimum 24 pt (affiliation superscripts); body 32 pt; chart ticks 26 pt, categories 27 pt; hero numbers 92 pt < title 112 pt.
 - QR decodes (zxing-cpp, 300 DPI) to the GitHub URL exactly, from both PDFs.
 - Contrast: every text/background pair ≥ 4.59 : 1; the extra-cardiac tint is 1.8 : 1 against white
   and is therefore always drawn with the #8a3f00 outline (7.5 : 1).

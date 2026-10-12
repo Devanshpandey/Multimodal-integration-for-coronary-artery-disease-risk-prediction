@@ -1,6 +1,6 @@
 
 == 1. pdfinfo / pdffonts
-poster.pdf: pages=1 size=5184 x 2592 pt fonts=16 all_embedded=True type3=False
+poster.pdf: pages=1 size=5184 x 2592 pt fonts=15 all_embedded=True type3=False
     AAAAAA+InterTight-Bold               CID TrueType      Identity-H       yes yes yes      4  0
     BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      5  0
     BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      6  0
@@ -12,26 +12,25 @@ poster.pdf: pages=1 size=5184 x 2592 pt fonts=16 all_embedded=True type3=False
     FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0
     GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0
     HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0
-    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     17  0
     EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0
-    EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     20  0
-    DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     24  0
-    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     27  0
+    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     19  0
+    DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     23  0
+    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     26  0
 poster_print.pdf: pages=1 size=5184 x 2592 pt fonts=0 all_embedded=True type3=False
 
 == 2. raster images (effective DPI at placed size)
 page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
 --------------------------------------------------------------------------------------------
-   1     0 image    1210   824  icc     3   8  image  no        21  0   198   198  383K  13%
-   1     1 image     864   864  icc     3   8  image  no        25  0   207   207  639K  29%
-   1     2 image     816  1038  icc     3   8  image  no        26  0   249   249  781K  31%
+   1     0 image    1210   824  icc     3   8  image  no        20  0   198   198  383K  13%
+   1     1 image     864   864  icc     3   8  image  no        24  0   207   207  639K  29%
+   1     2 image     816  1038  icc     3   8  image  no        25  0   249   249  781K  31%
 
-xref 21: 1210x824 px placed 6.12x4.17 in → 198x198 dpi
-xref 25: 864x864 px placed 4.17x4.17 in → 207x207 dpi
-xref 26: 816x1038 px placed 3.27x4.17 in → 249x249 dpi
+xref 20: 1210x824 px placed 6.12x4.17 in → 198x198 dpi
+xref 24: 864x864 px placed 4.17x4.17 in → 207x207 dpi
+xref 25: 816x1038 px placed 3.27x4.17 in → 249x249 dpi
 
 == 3. text sizes (PyMuPDF spans)
-sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 40.0, 44.0, 48.0, 60.0, 64.0, 102.0, 140.0]
+sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 40.0, 44.0, 48.0, 60.0, 64.0, 92.0, 112.0]
 min size: 24.0 pt
 five smallest spans:
    24.0 pt  Inter-Regular              '1'
@@ -97,7 +96,6 @@ offenders: none
    hero_subtitles: 59
    captions: 190
    header: 122
-   footer: 210
    BODY_TOTAL_excl_header_footer_captions: 393
 
 == hero tokens in page.get_text(): {'36.8%': True, '0.770 vs 0.666': True, 'r ≈ 0.05': True}

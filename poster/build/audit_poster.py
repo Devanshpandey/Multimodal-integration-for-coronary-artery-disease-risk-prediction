@@ -221,7 +221,6 @@ def check_words():
         hero_subtitles: words(txt('.hero-sub, .stack .lbl')),
         captions: words(txt('.cap')),
         header: words(txt('.hdr, .tagline, .key')),
-        footer: words(txt('footer')),
       }; }"""
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path=CHROME)

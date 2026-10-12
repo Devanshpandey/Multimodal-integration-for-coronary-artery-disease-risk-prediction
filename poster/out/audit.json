@@ -3,7 +3,7 @@
   "poster.pdf": {
    "pages": 1,
    "page_size_pt": "5184 x 2592",
-   "n_fonts": 16,
+   "n_fonts": 15,
    "all_embedded": true,
    "type3": false,
    "fonts": [
@@ -18,11 +18,10 @@
     "FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0",
     "GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0",
     "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0",
-    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     17  0",
     "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0",
-    "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     20  0",
-    "DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     24  0",
-    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     27  0"
+    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     19  0",
+    "DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     23  0",
+    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     26  0"
    ]
   },
   "poster_print.pdf": {
@@ -36,7 +35,7 @@
  },
  "2_images": [
   {
-   "xref": 21,
+   "xref": 20,
    "px": [
     1210,
     824
@@ -51,7 +50,7 @@
    ]
   },
   {
-   "xref": 25,
+   "xref": 24,
    "px": [
     864,
     864
@@ -66,7 +65,7 @@
    ]
   },
   {
-   "xref": 26,
+   "xref": 25,
    "px": [
     816,
     1038
@@ -97,8 +96,8 @@
    48.0,
    60.0,
    64.0,
-   102.0,
-   140.0
+   92.0,
+   112.0
   ],
   "five_smallest": [
    [
@@ -107,9 +106,9 @@
     "1",
     [
      728,
-     368,
+     389,
      737,
-     397
+     418
     ]
    ],
    [
@@ -118,9 +117,9 @@
     "2",
     [
      999,
-     368,
+     389,
      1013,
-     397
+     418
     ]
    ],
    [
@@ -129,9 +128,9 @@
     "3",
     [
      1340,
-     368,
+     389,
      1354,
-     397
+     418
     ]
    ],
    [
@@ -140,9 +139,9 @@
     "5",
     [
      2147,
-     368,
+     389,
      2161,
-     397
+     418
     ]
    ],
    [
@@ -151,13 +150,13 @@
     "6",
     [
      2676,
-     368,
+     389,
      2690,
-     397
+     418
     ]
    ]
   ],
-  "n_spans": 409
+  "n_spans": 375
  },
  "4_renders": {
   "distance_15dpi": "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png",
@@ -260,7 +259,6 @@
   "hero_subtitles": 59,
   "captions": 190,
   "header": 122,
-  "footer": 210,
   "BODY_TOTAL_excl_header_footer_captions": 393
  },
  "hero_tokens": {
