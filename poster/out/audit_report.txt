@@ -1,0 +1,106 @@
+
+== 1. pdfinfo / pdffonts
+poster.pdf: pages=1 size=5184 x 2592 pt fonts=16 all_embedded=True type3=False
+    AAAAAA+InterTight-Bold               CID TrueType      Identity-H       yes yes yes      4  0
+    BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      5  0
+    BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      6  0
+    CAAAAA+SourceSans3-SemiBold          CID TrueType      Identity-H       yes yes yes      7  0
+    DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes      9  0
+    BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes     10  0
+    EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     11  0
+    FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     13  0
+    FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0
+    GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0
+    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0
+    IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     17  0
+    EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0
+    EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     20  0
+    DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     24  0
+    HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     27  0
+poster_print.pdf: pages=1 size=5184 x 2592 pt fonts=0 all_embedded=True type3=False
+
+== 2. raster images (effective DPI at placed size)
+page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
+--------------------------------------------------------------------------------------------
+   1     0 image    1210   824  icc     3   8  image  no        21  0   198   198  383K  13%
+   1     1 image     864   864  icc     3   8  image  no        25  0   207   207  639K  29%
+   1     2 image     816  1038  icc     3   8  image  no        26  0   249   249  781K  31%
+
+xref 21: 1210x824 px placed 6.12x4.17 in → 198x198 dpi
+xref 25: 864x864 px placed 4.17x4.17 in → 207x207 dpi
+xref 26: 816x1038 px placed 3.27x4.17 in → 249x249 dpi
+
+== 3. text sizes (PyMuPDF spans)
+sizes used: [24.0, 26.0, 26.4, 27.0, 28.0, 30.0, 32.0, 36.0, 40.0, 44.0, 48.0, 60.0, 64.0, 102.0, 140.0]
+min size: 24.0 pt
+five smallest spans:
+   24.0 pt  Inter-Regular              '1'
+   24.0 pt  Inter-Regular              '2'
+   24.0 pt  Inter-Regular              '3'
+   24.0 pt  Inter-Regular              '5'
+   24.0 pt  Inter-Regular              '6'
+Inter spans below 32 pt (should only be author superscripts):
+   24.0 pt Inter-Regular '1'
+   24.0 pt Inter-Regular '2'
+   24.0 pt Inter-Regular '3'
+   24.0 pt Inter-Regular '5'
+   24.0 pt Inter-Regular '6'
+   24.0 pt Inter-Regular '4'
+   26.4 pt Inter-Regular '1*'
+   26.4 pt Inter-Regular '1'
+   26.4 pt Inter-Regular '1'
+   26.4 pt Inter-Regular '1'
+   26.4 pt Inter-Regular '1'
+   26.4 pt Inter-Regular '2'
+   26.4 pt Inter-Regular '3,5'
+   26.4 pt Inter-Regular '2'
+   26.4 pt Inter-Regular '4'
+   26.4 pt Inter-Regular '3,5'
+   26.4 pt Inter-Regular '1,3,6'
+   30.0 pt Inter-Regular 'Integrative Biology ·'
+   30.0 pt Inter-Regular 'Biomedical Engineering ·'
+   30.0 pt Inter-Regular 'Oden Institute for Computational Enginee'
+   30.0 pt Inter-Regular 'Internal Medicine, Dell Medical School ·'
+   30.0 pt Inter-Regular 'Statistics and Data Sciences — The Unive'
+   30.0 pt Inter-Regular 'UT Health Science Center, Houston'
+   30.0 pt Inter-Regular '→'
+   30.0 pt Inter-Regular '→'
+   30.0 pt Inter-Regular '↓'
+   30.0 pt Inter-Regular '↓'
+
+== 4. distance / collision renders written: /home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png and crop_col1-4.png (inspect visually)
+
+== 5. QR decode (zxing-cpp, 300 DPI render)
+decoded: ['https://github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction'] exact match: True | print file: True
+
+== 6. contrast
+   10.80:1  (need 4.5)  OK   ink #333f48 on white
+    7.52:1  (need 4.5)  OK   muted affiliations #4a5660 on white
+   10.80:1  (need 4.5)  OK   white on ink tagline/Cox box
+    4.59:1  (need 4.5)  OK   white on orange section bar / imaging tag
+    5.19:1  (need 4.5)  OK   white on blue genetics tag
+    5.61:1  (need 4.5)  OK   white on dark-grey clinical tag
+    4.59:1  (need 4.5)  OK   orange presenter / hero on white
+    9.78:1  (need 4.5)  OK   ink on tile #f2f4f5
+   13.03:1  (need 4.5)  OK   white caption on image overlay (80% ink over black)
+    1.81:1  (need 3.0)  LOW  extra-cardiac tint #f2b482 vs white (non-text; outlined)
+    7.52:1  (need 3.0)  OK   extra-cardiac outline #8a3f00 vs white
+
+== 7. safe margin (1.0 in = 72 pt)
+closest approach to any edge (pt): {'text': 72.0, 'image': 257.2, 'vector': 72.0}
+offenders: none
+
+== 8. word count
+   body_text_blocks: 187
+   pipeline_boxes_and_notes: 78
+   cohort_and_result_tiles: 69
+   hero_subtitles: 59
+   captions: 190
+   header: 122
+   footer: 210
+   BODY_TOTAL_excl_header_footer_captions: 393
+
+== hero tokens in page.get_text(): {'36.8%': True, '0.770 vs 0.666': True, 'r ≈ 0.05': True}
+   context: integration finds very-high-risk people⏎36.8%⏎5-yr CAD incidence, top quintile of both imaging and⏎g
+
+wrote out/audit.json

@@ -1,0 +1,17 @@
+{
+ "qr_version": 6,
+ "img_native": {
+  "cardiac": [
+   1210,
+   824
+  ],
+  "abdominal_x3": [
+   864,
+   864
+  ],
+  "dxa_x3": [
+   816,
+   1038
+  ]
+ }
+}

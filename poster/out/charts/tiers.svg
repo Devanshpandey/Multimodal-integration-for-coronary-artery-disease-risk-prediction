@@ -1,0 +1,226 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1187.0pt" height="302.4pt" viewBox="0 0 1187 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-12T22:46:48.164671</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 302.4 
+L 1187 302.4 
+L 1187 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 89.025 220.752 
+L 1038.625 220.752 
+L 1038.625 6.048 
+L 89.025 6.048 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(149.115375 255.376)">Overall</text>
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(151.86975 292.4)">cohort</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(336.142413 255.376)">Tier 1</text>
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(327.913819 292.4)">clinical</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(514.873827 255.376)">Tier 2</text>
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(514.481795 292.4)">+ PRS</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(693.60524 255.376)">Tier 3</text>
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(670.786178 292.4)">+ imaging</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(837.600247 255.376)">Top quintile</text>
+      <text style="font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(827.602435 292.4)">of both, Tier 3</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 89.025 220.752 
+L 1038.625 220.752 
+" clip-path="url(#p3ca7788e39)" style="fill: none; stroke: #d9dde2; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7"/>
+     <g id="text_6">
+      <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: end; fill: #333f48" x="85.525" y="234.576" transform="rotate(-0 85.525 234.576)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 89.025 169.632 
+L 1038.625 169.632 
+" clip-path="url(#p3ca7788e39)" style="fill: none; stroke: #d9dde2; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9"/>
+     <g id="text_7">
+      <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: end; fill: #333f48" x="85.525" y="183.456" transform="rotate(-0 85.525 183.456)">10</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 89.025 118.512 
+L 1038.625 118.512 
+" clip-path="url(#p3ca7788e39)" style="fill: none; stroke: #d9dde2; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11"/>
+     <g id="text_8">
+      <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: end; fill: #333f48" x="85.525" y="132.336" transform="rotate(-0 85.525 132.336)">20</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 89.025 67.392 
+L 1038.625 67.392 
+" clip-path="url(#p3ca7788e39)" style="fill: none; stroke: #d9dde2; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: end; fill: #333f48" x="85.525" y="81.216" transform="rotate(-0 85.525 81.216)">30</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_14">
+      <path d="M 89.025 16.272 
+L 1038.625 16.272 
+" clip-path="url(#p3ca7788e39)" style="fill: none; stroke: #d9dde2; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: end; fill: #333f48" x="85.525" y="30.096" transform="rotate(-0 85.525 30.096)">40</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="43.885312" y="113.4" transform="rotate(-90 43.885312 113.4)">5-yr incidence (%)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 132.188636 220.752 
+L 243.002113 220.752 
+L 243.002113 212.5728 
+L 132.188636 212.5728 
+z
+" clip-path="url(#p3ca7788e39)" style="fill: #8c8c8c"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 310.92005 220.752 
+L 421.733526 220.752 
+L 421.733526 179.856 
+L 310.92005 179.856 
+z
+" clip-path="url(#p3ca7788e39)" style="fill: #8c8c8c"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 489.651463 220.752 
+L 600.46494 220.752 
+L 600.46494 162.9864 
+L 489.651463 162.9864 
+z
+" clip-path="url(#p3ca7788e39)" style="fill: #0072b2"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 668.382877 220.752 
+L 779.196353 220.752 
+L 779.196353 139.4712 
+L 668.382877 139.4712 
+z
+" clip-path="url(#p3ca7788e39)" style="fill: #bf5700"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 847.11429 220.752 
+L 957.927767 220.752 
+L 957.927767 32.6304 
+L 847.11429 32.6304 
+z
+" clip-path="url(#p3ca7788e39)" style="fill: #333f48"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 984.737479 212.5728 
+L 984.737479 32.6304 
+" style="fill: none; stroke: #333f48; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 984.737479 212.5728 
+L 995.461364 212.5728 
+" style="fill: none; stroke: #333f48; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 984.737479 32.6304 
+L 995.461364 32.6304 
+" style="fill: none; stroke: #333f48; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 89.025 220.752 
+L 89.025 6.048 
+" style="fill: none; stroke: #333f48; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 89.025 220.752 
+L 1038.625 220.752 
+" style="fill: none; stroke: #333f48; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="187.595375" y="197.6832" transform="rotate(-0 187.595375 197.6832)">1.6%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="366.326788" y="164.9664" transform="rotate(-0 366.326788 164.9664)">8.0%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="545.058202" y="148.0968" transform="rotate(-0 545.058202 148.0968)">11.3%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="723.789615" y="124.5816" transform="rotate(-0 723.789615 124.5816)">15.9%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #333f48" x="902.521029" y="17.7408" transform="rotate(-0 902.521029 17.7408)">36.8%</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(1002.61062 93.6896)">≈23×</text>
+    <text style="font-weight: 700; font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(1002.61062 130.7136)">the cohort</text>
+    <text style="font-weight: 700; font-size: 26px; font-family: 'Source Sans 3'; fill: #333f48" transform="translate(1002.61062 167.7376)">event rate</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3ca7788e39">
+   <rect x="89.025" y="6.048" width="949.6" height="214.704"/>
+  </clipPath>
+ </defs>
+</svg>

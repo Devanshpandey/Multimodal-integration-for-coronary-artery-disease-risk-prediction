@@ -1,0 +1,274 @@
+{
+ "1_pdf_basics": {
+  "poster.pdf": {
+   "pages": 1,
+   "page_size_pt": "5184 x 2592",
+   "n_fonts": 16,
+   "all_embedded": true,
+   "type3": false,
+   "fonts": [
+    "AAAAAA+InterTight-Bold               CID TrueType      Identity-H       yes yes yes      4  0",
+    "BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      5  0",
+    "BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes      6  0",
+    "CAAAAA+SourceSans3-SemiBold          CID TrueType      Identity-H       yes yes yes      7  0",
+    "DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes      9  0",
+    "BAAAAA+Inter-Regular                 CID TrueType      Identity-H       yes yes yes     10  0",
+    "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     11  0",
+    "FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     13  0",
+    "FAAAAA+Inter-SemiBold                CID TrueType      Identity-H       yes yes yes     14  0",
+    "GAAAAA+Inter-Bold                    CID TrueType      Identity-H       yes yes yes     15  0",
+    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     16  0",
+    "IAAAAA+SourceSans3-Italic            CID TrueType      Identity-H       yes yes yes     17  0",
+    "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     18  0",
+    "EAAAAA+SourceSans3-Bold              CID TrueType      Identity-H       yes yes yes     20  0",
+    "DAAAAA+SourceSans3-Regular           CID TrueType      Identity-H       yes yes yes     24  0",
+    "HAAAAA+InterTight-ExtraBold          CID TrueType      Identity-H       yes yes yes     27  0"
+   ]
+  },
+  "poster_print.pdf": {
+   "pages": 1,
+   "page_size_pt": "5184 x 2592",
+   "n_fonts": 0,
+   "all_embedded": true,
+   "type3": false,
+   "fonts": []
+  }
+ },
+ "2_images": [
+  {
+   "xref": 21,
+   "px": [
+    1210,
+    824
+   ],
+   "placed_in": [
+    6.12,
+    4.17
+   ],
+   "eff_dpi": [
+    198,
+    198
+   ]
+  },
+  {
+   "xref": 25,
+   "px": [
+    864,
+    864
+   ],
+   "placed_in": [
+    4.17,
+    4.17
+   ],
+   "eff_dpi": [
+    207,
+    207
+   ]
+  },
+  {
+   "xref": 26,
+   "px": [
+    816,
+    1038
+   ],
+   "placed_in": [
+    3.27,
+    4.17
+   ],
+   "eff_dpi": [
+    249,
+    249
+   ]
+  }
+ ],
+ "3_text": {
+  "min_pt": 24.0,
+  "sizes_used": [
+   24.0,
+   26.0,
+   26.4,
+   27.0,
+   28.0,
+   30.0,
+   32.0,
+   36.0,
+   40.0,
+   44.0,
+   48.0,
+   60.0,
+   64.0,
+   102.0,
+   140.0
+  ],
+  "five_smallest": [
+   [
+    24.0,
+    "Inter-Regular",
+    "1",
+    [
+     728,
+     368,
+     737,
+     397
+    ]
+   ],
+   [
+    24.0,
+    "Inter-Regular",
+    "2",
+    [
+     999,
+     368,
+     1013,
+     397
+    ]
+   ],
+   [
+    24.0,
+    "Inter-Regular",
+    "3",
+    [
+     1340,
+     368,
+     1354,
+     397
+    ]
+   ],
+   [
+    24.0,
+    "Inter-Regular",
+    "5",
+    [
+     2147,
+     368,
+     2161,
+     397
+    ]
+   ],
+   [
+    24.0,
+    "Inter-Regular",
+    "6",
+    [
+     2676,
+     368,
+     2690,
+     397
+    ]
+   ]
+  ],
+  "n_spans": 409
+ },
+ "4_renders": {
+  "distance_15dpi": "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/out/distance_15dpi.png",
+  "crops": [
+   "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/crop_col1.png",
+   "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/crop_col2.png",
+   "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/crop_col3.png",
+   "/home/user/Multimodal-integration-for-coronary-artery-disease-risk-prediction/poster/crop_col4.png"
+  ]
+ },
+ "5_qr": {
+  "decoded": [
+   "https://github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction"
+  ],
+  "exact_match": true,
+  "decoded_print_pdf": [
+   "https://github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction"
+  ]
+ },
+ "6_contrast": [
+  {
+   "pair": "ink #333f48 on white",
+   "ratio": 10.8,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "muted affiliations #4a5660 on white",
+   "ratio": 7.52,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "white on ink tagline/Cox box",
+   "ratio": 10.8,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "white on orange section bar / imaging tag",
+   "ratio": 4.59,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "white on blue genetics tag",
+   "ratio": 5.19,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "white on dark-grey clinical tag",
+   "ratio": 5.61,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "orange presenter / hero on white",
+   "ratio": 4.59,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "ink on tile #f2f4f5",
+   "ratio": 9.78,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "white caption on image overlay (80% ink over black)",
+   "ratio": 13.03,
+   "threshold": 4.5,
+   "ok": true
+  },
+  {
+   "pair": "extra-cardiac tint #f2b482 vs white (non-text; outlined)",
+   "ratio": 1.81,
+   "threshold": 3.0,
+   "ok": false
+  },
+  {
+   "pair": "extra-cardiac outline #8a3f00 vs white",
+   "ratio": 7.52,
+   "threshold": 3.0,
+   "ok": true
+  }
+ ],
+ "7_margins": {
+  "worst_distance_pt": {
+   "text": 72.0,
+   "image": 257.2,
+   "vector": 72.0
+  },
+  "offenders": []
+ },
+ "8_words": {
+  "body_text_blocks": 187,
+  "pipeline_boxes_and_notes": 78,
+  "cohort_and_result_tiles": 69,
+  "hero_subtitles": 59,
+  "captions": 190,
+  "header": 122,
+  "footer": 210,
+  "BODY_TOTAL_excl_header_footer_captions": 393
+ },
+ "hero_tokens": {
+  "found": {
+   "36.8%": true,
+   "0.770 vs 0.666": true,
+   "r \u2248 0.05": true
+  },
+  "context_36_8": "integration finds very-high-risk people\u23ce36.8%\u23ce5-yr CAD incidence, top quintile of both imaging and\u23ceg"
+ }
+}
