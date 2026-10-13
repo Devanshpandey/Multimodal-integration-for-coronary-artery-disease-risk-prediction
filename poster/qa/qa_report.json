@@ -12,18 +12,18 @@
   "title_pt": 100,
   "header_bottom_in": 6.1,
   "takehome_pt": 50,
-  "col1_remaining_in": 0.37,
+  "col1_remaining_in": 0.15,
   "hexbin": {
-    "placed_w_in": 5.46,
-    "placed_h_in": 4.386666666666667,
+    "placed_w_in": 6.824999999999999,
+    "placed_h_in": 5.483333333333333,
     "native_px": [
       819,
       658
     ],
-    "eff_dpi": 150.0
+    "eff_dpi": 120.00000000000001
   },
-  "col2_remaining_in": 0.1,
-  "col3_remaining_in": 0.58,
+  "col2_remaining_in": 0.16,
+  "col3_remaining_in": 0.29,
   "pdf_boxes": {
     "MediaBox": [
       0.0,
@@ -40,25 +40,25 @@
   },
   "words": {
     "takehome": 20,
-    "c1_question": 48,
-    "c1_methods": 78,
-    "c1_cap_b": 37,
+    "c1_question": 42,
+    "c1_methods": 57,
+    "c1_cap_b": 26,
     "c2_intro": 26,
-    "c2_hex_note": 27,
-    "c2_cap_d": 31,
-    "c3_intro": 26,
-    "c3_subgroup": 55,
-    "c3_cap_f": 36,
-    "c3_cap_sup": 29,
-    "c3_conclusion": 32,
+    "c2_hex_note": 31,
+    "c2_cap_d": 22,
+    "c3_intro": 23,
+    "c3_subgroup": 37,
+    "c3_cap_f": 22,
+    "c3_cap_sup": 19,
+    "c3_conclusion": 30,
     "c3_limitations": 57,
-    "footer_0": 41,
-    "footer_1": 13,
+    "footer_0": 37,
+    "footer_1": 2,
     "footer_2": 42,
     "footer_3": 22
   },
-  "words_total_body": 502,
-  "words_total_all": 620,
+  "words_total_body": 412,
+  "words_total_all": 515,
   "geometry": {
     "pages": 1,
     "mediabox_pt": [
@@ -80,12 +80,12 @@
     "ok": true
   },
   "fonts": {
-    "table": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAA+SourceSans3-Regular           TrueType          WinAnsi          yes yes yes     12  0\nAAAAAA+SourceSans3-Bold              TrueType          WinAnsi          yes yes yes     13  0\nAAAAAA+SourceSans3-Semibold          TrueType          WinAnsi          yes yes yes     14  0\nAAAAAA+SourceSans3-It                TrueType          WinAnsi          yes yes yes     15  0\n",
+    "table": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAA+SourceSans3-Regular           TrueType          WinAnsi          yes yes yes     12  0\nAAAAAA+SourceSans3-Bold              TrueType          WinAnsi          yes yes yes     13  0\nAAAAAA+SourceSans3-Semibold          TrueType          WinAnsi          yes yes yes     14  0\n",
     "all_embedded": true,
-    "count": 4
+    "count": 3
   },
   "images": {
-    "table": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n   1     0 image     819   658  rgb     3   8  image  no        10  0   150   150 35.1K 2.2%\n   1     1 image      26   322  rgb     3   8  image  no        11  0    81   133  763B 3.0%\n",
+    "table": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n   1     0 image     819   658  rgb     3   8  image  no        10  0   120   120 35.1K 2.2%\n   1     1 image      26   322  rgb     3   8  image  no        11  0    81   107  763B 3.0%\n",
     "min_ppi": 81
   },
   "links": [
@@ -93,7 +93,7 @@
     "https://www.medrxiv.org/content/10.1101/2025.10.09.25337677"
   ],
   "text": {
-    "chars": 9374,
+    "chars": 8153,
     "has_title": true,
     "numbers_present": {
       "42,351": true,
@@ -101,7 +101,7 @@
       "0.666": true,
       "0.770": true,
       "0.065": true,
-      "0.004": true,
+      "0.4%": true,
       "29,075": true,
       "0.749": true,
       "0.788": true,
@@ -138,5 +138,5 @@
     "caption": 0.25,
     "footer": 0.24
   },
-  "file_size_mb": 0.12
+  "file_size_mb": 0.1
 }

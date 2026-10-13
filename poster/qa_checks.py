@@ -24,7 +24,7 @@ for a in p.get("/Annots", []) or []:
 rep["links"] = links
 text = p.extract_text()
 rep["text"] = {"chars": len(text), "has_title": "Multimodal integration reveals" in text,
-               "numbers_present": {k: (k in text) for k in ["42,351", "677", "0.666", "0.770", "0.065", "0.004", "29,075",
+               "numbers_present": {k: (k in text) for k in ["42,351", "677", "0.666", "0.770", "0.065", "0.4%", "29,075",
                                                             "0.749", "0.788", "0.813", "0.819", "8.0%", "11.3%", "15.9%", "36.8%",
                                                             "0.805", "0.822", "0.785", "0.795", "0.762", "0.748", "0.751", "0.732",
                                                             "0.634", "65439", "38.41%", "14.42%", "0.15%"]}}

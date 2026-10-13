@@ -91,7 +91,7 @@ def draw_workflow(c, x, y, w, h):
              proc="CAD GWAS meta-analysis of non-imaged UK Biobank, FinnGen and MVP (229,724 cases; 1,024,752 controls) &rarr; PRS-CS polygenic risk score"),
         dict(name="Clinical", sub="Demographics, lifestyle, medication, lipids, 12-lead ECG intervals",
              col=S.COL_CLINICAL, bg=S.HexColor("#EEF0F2"),
-             proc="Harmonised covariates measured at the imaging visit (standardised; imaging centre included as a covariate)"),
+             proc="Imaging-visit measurements, with baseline values substituted when unavailable; standardised, imaging centre as covariate"),
     ]
     name_st = pstyle("wf_name", size=S.SZ_LABEL + 2, font=S.FONT_B, color=white, leading=(S.SZ_LABEL + 2) * 1.15)
     sub_st = pstyle("wf_sub", size=S.SZ_CAPTION - 1, color=white, leading=(S.SZ_CAPTION - 1) * 1.18)
@@ -249,11 +249,11 @@ def draw_hexbin_panel(c, x, y, w, h, img_path, cb_path, title, min_dpi=150):
         lab = ("−" + str(abs(v))) if v < 0 else str(v)
         draw_text(c, lab, tx, py0 - 12 - S.SZ_LABEL * 0.95, S.FONT, S.SZ_LABEL - 2, S.TEXT, "c")
         draw_text(c, lab, px0 - 18, ty - (S.SZ_LABEL - 2) * 0.35, S.FONT, S.SZ_LABEL - 2, S.TEXT, "e")
-    draw_text(c, "Polygenic risk score (SD)", px0 + pw / 2, py0 - 12 - S.SZ_LABEL * 2.05, S.FONT_SB, S.SZ_LABEL, S.TEXT, "c")
+    draw_text(c, "Polygenic risk score (SD)", px0 + pw / 2, py0 - 12 - S.SZ_LABEL * 2.05, S.FONT_SB, S.SZ_LABEL + 3, S.TEXT, "c")
     c.saveState()
     c.translate(x + 0.3 * IN, py0 + ph / 2)
     c.rotate(90)
-    draw_text(c, "Imaging risk score (SD)", 0, 0, S.FONT_SB, S.SZ_LABEL, S.TEXT, "c")
+    draw_text(c, "Imaging risk score (SD)", 0, 0, S.FONT_SB, S.SZ_LABEL + 3, S.TEXT, "c")
     c.restoreState()
     # colour bar
     cbx = px0 + pw + cb_gap
@@ -418,13 +418,38 @@ def draw_logo(c, x, y, w, h, candidates, placeholder_label):
             c.drawImage(img, x + (w - iw * sc) / 2, y + (h - ih * sc) / 2, iw * sc, ih * sc, mask="auto")
             return "file", str(p)
     # placeholder
-    c.setStrokeColor(S.RULE)
-    c.setLineWidth(3)
+    c.setStrokeColor(S.HexColor("#E3E6E8"))
+    c.setLineWidth(2)
     c.setDash(18, 12)
-    c.setFillColor(S.HexColor("#FAFAF8"))
-    c.rect(x, y, w, h, stroke=1, fill=1)
+    c.rect(x, y, w, h, stroke=1, fill=0)
     c.setDash()
-    st = pstyle("ph", size=S.SZ_CAPTION, color=S.TEXT_MUTED, align=TA_CENTER, leading=S.SZ_CAPTION * 1.2)
+    st = pstyle("ph", size=S.SZ_SMALL, color=S.HexColor("#B9BFC4"), align=TA_CENTER, leading=S.SZ_SMALL * 1.2)
     hh, p = para_height(placeholder_label, w - 40, st)
     p.drawOn(c, x + 20, y + (h - hh) / 2)
     return "placeholder", None
+
+
+# --------------------------------------------------------------------------
+# compact horizontal bars (variance decomposition)
+# --------------------------------------------------------------------------
+def draw_hbars(c, x, y, w, h, bars, xmax, title, fmt="{:.2f}%"):
+    th = panel_title(c, x, y + h, w, title, size=S.SZ_SUBHEAD - 6)
+    top = y + h - th - 0.15 * IN
+    label_w = w * 0.40
+    ax_x0 = x + label_w
+    ax_x1 = x + w - 1.2 * IN
+    n = len(bars)
+    row_h = (top - y) / n
+    bh = row_h * 0.55
+    lab_st = pstyle("hb", size=S.SZ_CAPTION, color=S.TEXT, leading=S.SZ_CAPTION * 1.1)
+    for i, b in enumerate(bars):
+        cy = top - (i + 0.5) * row_h
+        hh, p = para_height(b["label"], label_w - 0.2 * IN, lab_st)
+        p.drawOn(c, x, cy - hh / 2)
+        bw = max((b["value"] / xmax) * (ax_x1 - ax_x0), 3)
+        c.setFillColor(b["color"])
+        c.rect(ax_x0, cy - bh / 2, bw, bh, stroke=0, fill=1)
+        draw_text(c, fmt.format(b["value"]), ax_x0 + bw + 12, cy - S.SZ_CAPTION * 0.35, S.FONT_B, S.SZ_CAPTION, b["color"], "w")
+    c.setStrokeColor(S.RULE)
+    c.setLineWidth(1.5)
+    c.line(ax_x0, y, ax_x0, top)
