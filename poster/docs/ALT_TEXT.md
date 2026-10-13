@@ -9,7 +9,7 @@ order (header, take-home strip, column 1, column 2, column 3, footer), document 
 ## Header
 Title, eleven authors with numbered affiliations (presenter Devansh Pandey in bold;
 corresponding author Vagheesh M. Narasimhan marked with a dagger), and two reserved
-logo areas (UT Austin, Oden Institute) that currently hold placeholder text.
+logo areas (UT Austin, Oden Institute) that currently show only a faint institution name.
 
 ## Take-home strip
 One sentence on a pale orange band with a burnt-orange left bar: "Cardiac imaging and
@@ -43,19 +43,18 @@ from the held-out Cox analyses.
 score (x, standard-deviation units, -4 to 4) against imaging risk score (y, same units).
 A roughly circular blue cloud centred at the origin with a nearly flat dark-red fitted
 line sloping very slightly upward. Colour bar: count per hexagon on a log scale from 1
-to 100. To the right, three large figures: r = 0.065 (Pearson correlation), R² = 0.004
-(shared variance), n = 29,075 (training-partition participants), with a note that PRS is
-flat across imaging-risk quintiles and that low overlap does not prove biological
-independence.
+to 100. To the right, one annotation line: "PRS–imaging risk correlation: r = 0.065;
+shared variance = 0.4%; n = 29,075." and a caveat that low overlap supports
+complementarity but does not establish biological independence.
 
-**Partial R² bar chart.** Three vertical bars for variance of the imaging risk score
+**Partial R² bars (compact).** Three horizontal bars for variance of the imaging risk score
 explained by demographics (age, sex) 38.41%, clinical risk factors 14.42% and genetics
-(PRS) 0.15%; y-axis 0 to 45%.
+(PRS) 0.15%.
 
-**Chip panel.** Two grey boxes. "Largest loss of explained variance when removed": long-axis
-cardiac MRI, medication history, polygenic risk score, aortic distensibility MRI. "Little
-loss after adjustment for clinical variables": liver MRI, pancreas MRI, whole-body DXA,
-blood-flow MRI. Labelled as a qualitative grouping from the manuscript text.
+**Chip panel.** Two grey boxes headed "Largest loss when removed": long-axis cardiac MRI,
+medication history, polygenic risk score, aortic distensibility MRI; and "Little loss after
+clinical adjustment": liver MRI, pancreas MRI, whole-body DXA, blood-flow MRI. Titled
+"Which feature groups carry non-redundant information? (leave-one-group-out)".
 
 **Held-out C-index dot plot.** Four horizontal lollipops on a C-index axis from 0.50 to
 0.85: Clinical 0.749 (grey circle); Clinical + PRS 0.788 (blue square, labelled
@@ -70,10 +69,9 @@ reported; calibration slopes 0.99 to 1.08.
 clinical-model risk, 8.0% 5-year CAD incidence. Tier 2 (blue): within Tier 1, top third
 by PRS, 11.3%. Tier 3 (teal): within Tier 2, top third by imaging risk score, 15.9%.
 
-**Secondary subgroup callout.** Orange-outlined box: 36.8% five-year Kaplan-Meier
-incidence for participants in Tier 3 who are in the top quintile of both PRS and imaging
-risk (quintiles defined within the tier); subgroup size and confidence interval not
-reported; the full-cohort observed event proportion of 1.6% is given as crude context.
+**Subgroup sentence (caption size).** Within Tier 3, the top within-tier quintile of both
+PRS and imaging risk reached 36.8% five-year incidence; stratum size and confidence interval
+are not reported; the full-cohort crude event proportion of 1.6% is given as context.
 
 **Leave-one-centre-out table.** Columns: held-out centre, test cases / controls, AUC,
 C-index. Reading 71 / 7,607, 0.805, 0.762. Cheadle 409 / 21,942, 0.822, 0.748. Bristol
