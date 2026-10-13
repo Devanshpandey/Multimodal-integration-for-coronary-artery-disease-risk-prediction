@@ -21,8 +21,8 @@ ST = {
     "label": pstyle("label", size=S.SZ_LABEL),
     "small": pstyle("small", size=S.SZ_SMALL, color=S.TEXT_MUTED, leading=S.SZ_SMALL * 1.22),
     "small_dark": pstyle("small_dark", size=S.SZ_SMALL, color=S.TEXT, leading=S.SZ_SMALL * 1.22),
-    "section": pstyle("section", size=S.SZ_SECTION, font=S.FONT_B, color=S.CHARCOAL, leading=S.SZ_SECTION * 1.12),
-    "subhead": pstyle("subhead", size=S.SZ_SUBHEAD, font=S.FONT_SB, color=S.BURNT_ORANGE, leading=S.SZ_SUBHEAD * 1.18),
+    "section": pstyle("section", size=S.SZ_SECTION, font=S.FONT_B, color=S.INK, leading=S.SZ_SECTION * 1.12),
+    "subhead": pstyle("subhead", size=S.SZ_SUBHEAD, font=S.FONT_SB, color=S.INK, leading=S.SZ_SUBHEAD * 1.18),
     "takehome": pstyle("takehome", size=S.SZ_TAKEHOME, font=S.FONT_SB, leading=S.SZ_TAKEHOME * 1.2),
     "authors": pstyle("authors", size=S.SZ_AUTHORS, align=TA_CENTER, leading=S.SZ_AUTHORS * 1.22),
     "affil": pstyle("affil", size=S.SZ_AFFIL, align=TA_CENTER, color=S.TEXT_MUTED, leading=S.SZ_AFFIL * 1.22),
@@ -91,7 +91,7 @@ class Column:
         c.line(self.x + 2.2 * S.IN, self.y, self.x + self.w, self.y)
         self.y -= 28
 
-    def subhead(self, text, gap=8):
+    def subhead(self, text, gap=10):
         h = draw_para(self.c, text, self.x, self.y, self.w, ST["subhead"])
         self.y -= h + gap
 

@@ -9,21 +9,18 @@
       null
     ]
   },
-  "title_pt": 100,
-  "header_bottom_in": 6.1,
-  "takehome_pt": 50,
-  "col1_remaining_in": 0.15,
-  "hexbin": {
-    "placed_w_in": 6.824999999999999,
-    "placed_h_in": 5.483333333333333,
-    "native_px": [
-      819,
-      658
-    ],
-    "eff_dpi": 120.00000000000001
+  "title_pt": 104,
+  "takehome_pt": 42,
+  "header_text_bottom_in": 5.92,
+  "col1_remaining_in": 0.22,
+  "hexbin_vector": {
+    "plot_w_in": 9.27287234042553,
+    "plot_h_in": 7.449999999999999,
+    "cells": 1261,
+    "fidelity": 0.9508741849167381
   },
-  "col2_remaining_in": 0.16,
-  "col3_remaining_in": 0.29,
+  "col2_remaining_in": 0.46,
+  "col3_remaining_in": 0.2,
   "pdf_boxes": {
     "MediaBox": [
       0.0,
@@ -40,25 +37,26 @@
   },
   "words": {
     "takehome": 20,
-    "c1_question": 42,
-    "c1_methods": 57,
-    "c1_cap_b": 26,
-    "c2_intro": 26,
-    "c2_hex_note": 31,
-    "c2_cap_d": 22,
+    "finding_0": 17,
+    "finding_1": 15,
+    "finding_2": 18,
+    "c1_methods": 65,
+    "c1_cap_b": 24,
+    "c2_lead": 38,
+    "c2_cav": 29,
+    "c2_cap_d": 18,
     "c3_intro": 23,
-    "c3_subgroup": 37,
-    "c3_cap_f": 22,
-    "c3_cap_sup": 19,
+    "c3_subgroup": 40,
+    "c3_cap_f": 31,
     "c3_conclusion": 30,
-    "c3_limitations": 57,
+    "c3_limitations": 53,
     "footer_0": 37,
     "footer_1": 2,
     "footer_2": 42,
     "footer_3": 22
   },
-  "words_total_body": 412,
-  "words_total_all": 515,
+  "words_total_body": 421,
+  "words_total_all": 524,
   "geometry": {
     "pages": 1,
     "mediabox_pt": [
@@ -80,20 +78,21 @@
     "ok": true
   },
   "fonts": {
-    "table": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAA+SourceSans3-Regular           TrueType          WinAnsi          yes yes yes     12  0\nAAAAAA+SourceSans3-Bold              TrueType          WinAnsi          yes yes yes     13  0\nAAAAAA+SourceSans3-Semibold          TrueType          WinAnsi          yes yes yes     14  0\n",
+    "table": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAA+SourceSans3-Regular           TrueType          WinAnsi          yes yes yes     10  0\nAAAAAA+FrauncesDisplay-Bold          TrueType          WinAnsi          yes yes yes     11  0\nAAAAAA+SourceSans3-Bold              TrueType          WinAnsi          yes yes yes     12  0\nAAAAAA+SourceSans3-Semibold          TrueType          WinAnsi          yes yes yes     13  0\n",
     "all_embedded": true,
-    "count": 3
+    "count": 4
   },
   "images": {
-    "table": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n   1     0 image     819   658  rgb     3   8  image  no        10  0   120   120 35.1K 2.2%\n   1     1 image      26   322  rgb     3   8  image  no        11  0    81   107  763B 3.0%\n",
-    "min_ppi": 81
+    "table": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+    "count": 0,
+    "min_ppi": null
   },
   "links": [
     "https://github.com/Devanshpandey/Multimodal-integration-for-coronary-artery-disease-risk-prediction",
     "https://www.medrxiv.org/content/10.1101/2025.10.09.25337677"
   ],
   "text": {
-    "chars": 8153,
+    "chars": 7855,
     "has_title": true,
     "numbers_present": {
       "42,351": true,
@@ -121,8 +120,7 @@
       "0.732": true,
       "0.634": true,
       "65439": true,
-      "38.41%": true,
-      "14.42%": true,
+      "38.4%": true,
       "0.15%": true
     }
   },
@@ -131,12 +129,12 @@
     "ok": true
   },
   "cap_heights_in": {
-    "title": 0.92,
-    "takehome": 0.46,
+    "title": 0.95,
+    "takehome": 0.39,
     "section": 0.42,
     "body": 0.3,
     "caption": 0.25,
     "footer": 0.24
   },
-  "file_size_mb": 0.1
+  "file_size_mb": 0.11
 }

@@ -3,6 +3,8 @@
 Single-page, 72 x 36 in (landscape) academic poster for
 *Multimodal integration reveals complementary imaging and genetic predictors of coronary artery disease risk*.
 Everything on the page is generated from code; all numbers come from `data/numbers.json`.
+Design v3: navy header band, three-finding strip, one hero figure per column, fully vector
+(the Fig. 3c hexbin is a cell-by-cell vector transcription, see `assets/figures/PROVENANCE.md`).
 
 ## One-command build
 
@@ -16,7 +18,8 @@ Outputs (in `output/`):
 
 | File | What it is |
 |---|---|
-| `ASHG2026_Devansh_Pandey_Poster_72x36.pdf` | 5184 x 2592 pt single page, MediaBox = TrimBox, no bleed, fonts embedded, vector text and charts |
+| `ASHG2026_Devansh_Pandey_Poster_72x36.pdf` | 5184 x 2592 pt single page, MediaBox = TrimBox, no bleed, fonts embedded, no raster images |
+| `poster_source_bundle.zip` | this bundle without renders |
 | `ASHG2026_Devansh_Pandey_Poster_preview.png` | 40-dpi raster preview (2880 x 1440 px) |
 
 `qa/qa_report.json` is rewritten on every build (geometry, fonts, image ppi, links, QR decode,
@@ -32,11 +35,12 @@ poster/
   qa_checks.py           automated checks, preview renders
   poster_lib/style.py    page size, margins, palette, type scale, font registration
   poster_lib/text.py     measured paragraph flow (Column cursor)
-  poster_lib/charts.py   vector modules: workflow diagram, dot plots, bars, tier cards, table, logo slots
+  poster_lib/charts.py   vector modules: confluence diagram, vector hexbin, C-index ladder, staircase, centre dots, logo slots
   poster_lib/qr.py       vector QR code
+  tools/hexbin_transcribe.py  lattice detection + cell transcription of the Fig. 3c raster (writes hexcells.json)
   data/numbers.json      source-of-truth manifest (value, unit, population, page/panel, uncertainty)
-  assets/fonts/          Source Sans 3 (SIL OFL 1.1, licence included)
-  assets/figures/        Fig. 3c hexbin interior + colour bar crops (see PROVENANCE.md)
+  assets/fonts/          Source Sans 3 and Fraunces display instances (SIL OFL 1.1, licences included)
+  assets/figures/        Fig. 3c crops and the transcribed cell list fig3c_hexcells.json (see PROVENANCE.md)
   assets/logos/          EMPTY: drop official UT Austin / Oden Institute files here (see README.md inside)
   docs/SOURCE_AND_QA.md  provenance, issue log, QA results, unresolved items
   docs/ALT_TEXT.md       accessible descriptions of every visual module

@@ -15,7 +15,8 @@ fonts = subprocess.run(["pdffonts", str(PDF)], capture_output=True, text=True).s
 rows = [l.split() for l in fonts.splitlines()[2:] if l.strip()]
 rep["fonts"] = {"table": fonts, "all_embedded": all(x[3] == "yes" for x in rows), "count": len(rows)}
 imgs = subprocess.run(["pdfimages", "-list", str(PDF)], capture_output=True, text=True).stdout
-rep["images"] = {"table": imgs, "min_ppi": min(int(l.split()[-4]) for l in imgs.splitlines()[2:] if l.strip())}
+img_rows = [l for l in imgs.splitlines()[2:] if l.strip()]
+rep["images"] = {"table": imgs, "count": len(img_rows), "min_ppi": (min(int(l.split()[-4]) for l in img_rows) if img_rows else None)}
 links = []
 for a in p.get("/Annots", []) or []:
     a = a.get_object()
@@ -27,7 +28,7 @@ rep["text"] = {"chars": len(text), "has_title": "Multimodal integration reveals"
                "numbers_present": {k: (k in text) for k in ["42,351", "677", "0.666", "0.770", "0.065", "0.4%", "29,075",
                                                             "0.749", "0.788", "0.813", "0.819", "8.0%", "11.3%", "15.9%", "36.8%",
                                                             "0.805", "0.822", "0.785", "0.795", "0.762", "0.748", "0.751", "0.732",
-                                                            "0.634", "65439", "38.41%", "14.42%", "0.15%"]}}
+                                                            "0.634", "65439", "38.4%", "0.15%"]}}
 # previews
 subprocess.run(["pdftoppm", "-r", "40", "-png", "-singlefile", str(PDF), str(ROOT/"output"/"ASHG2026_Devansh_Pandey_Poster_preview")], check=True)
 subprocess.run(["pdftoppm", "-r", "20", "-png", "-singlefile", "-gray", str(PDF), str(ROOT/"qa"/"grayscale_preview")], check=True)
@@ -41,11 +42,11 @@ if not data:
     data, pts, _ = cv2.QRCodeDetector().detectAndDecode(big)
 rep["qr"] = {"decoded": data, "ok": data == "https://www.medrxiv.org/content/10.1101/2025.10.09.25337677"}
 # cap-height of major lettering (Source Sans 3 cap height = 0.660 em)
-cap = 0.660
+cap = 0.660   # Source Sans 3 cap height; Fraunces display ~0.70
 rep["cap_heights_in"] = {"title": round(rep["title_pt"]*cap/72, 2), "takehome": round(rep["takehome_pt"]*cap/72, 2),
                          "section": round(46*cap/72, 2), "body": round(33*cap/72, 2), "caption": round(27*cap/72, 2), "footer": round(26*cap/72, 2)}
 rep["file_size_mb"] = round(PDF.stat().st_size/1e6, 2)
 (ROOT/"qa"/"qa_report.json").write_text(json.dumps(rep, indent=2))
 print(json.dumps({k: rep[k] for k in ["geometry", "links", "qr", "cap_heights_in", "file_size_mb"]}, indent=2))
-print("fonts embedded:", rep["fonts"]["all_embedded"], "| min image ppi:", rep["images"]["min_ppi"])
+print("fonts embedded:", rep["fonts"]["all_embedded"], "| raster images:", rep["images"]["count"], "| min image ppi:", rep["images"]["min_ppi"])
 print("missing numbers:", [k for k, v in rep["text"]["numbers_present"].items() if not v])
