@@ -2,11 +2,7 @@
 
 A deep-learning framework that integrates **multi-organ medical imaging, polygenic risk, ECG, and clinical biomarkers** to predict 10-year incident coronary artery disease (CAD) in the UK Biobank — and to disentangle the *complementary* and *independent* contributions of imaging-derived and genetic risk.
 
-This repository contains the **analysis and figure-generation code** for the manuscript below.
-
-> **Multimodal AI for Precision Preventive Cardiology**
-> Devansh Pandey, Liaoyi Xu, Eucharist Kun, Chenfei Li, Joyce Y. Wang, Alaa Melek, Julie C. DiCarlo, Edward Castillo, Jagat Narula, Charles A. Taylor, Vagheesh M. Narasimhan
-> *medRxiv* 2025.10.09.25337677 · doi: [10.1101/2025.10.09.25337677](https://doi.org/10.1101/2025.10.09.25337677)
+This repository contains the **analysis and figure-generation code** 
 
 > [!IMPORTANT]
 > **This repository contains code only.** No individual-level UK Biobank data, imaging, polygenic scores, or trained model weights are included. See [Data availability](#data-availability).
